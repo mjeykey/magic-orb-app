@@ -482,8 +482,6 @@ sealButton.addEventListener("click",async()=>{
   requestAnimationFrame(()=>sealedMessage.classList.add("visible"));
 });
 
-const askAgainButton = document.getElementById("askAgainButton");
-
 if (askAgainButton) {
   askAgainButton.addEventListener("click",()=>{
     clearRitualTimers();
