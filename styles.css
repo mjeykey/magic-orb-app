@@ -455,3 +455,8 @@ textarea::placeholder{color:rgba(234,228,246,.5)}
   .box-input-wrap{width:72%;top:58%;padding:10px}
   .box-input-wrap textarea{min-height:78px;padding:12px;font-size:.88rem}
 }
+
+
+.ask-again-button{
+  margin-top:22px;
+}
