@@ -16,11 +16,16 @@
           <span class="mystic-fog" aria-hidden="true"></span>
           <span class="answer" id="answer" aria-live="polite"></span>
           <span class="spark-layer" id="sparkLayer" aria-hidden="true"></span>
-          <div id="secretNote" class="secret-note" aria-hidden="true"></div>
         </button>
-      </div>
 
-      <p id="sealCaption" class="seal-caption" aria-live="polite"></p>
+        <div id="secretNote" class="secret-note" aria-hidden="true"></div>
+
+        <div id="boxInputWrap" class="box-input-wrap hidden" aria-live="polite">
+          <label class="sr-only" for="boxSecret">Dein Geheimnis</label>
+          <textarea id="boxSecret" rows="3" maxlength="900" placeholder="Schreib dein Geheimnis hier hinein …"></textarea>
+          <button id="sealButton" class="release-button" type="button">Ans Universum übergeben</button>
+        </div>
+      </div>
 
       <div id="thoughtWrap" class="thought-wrap">
         <label class="sr-only" for="thought">Dein Gedanke</label>
@@ -29,23 +34,10 @@
 
       <p class="hint" id="hint">Gedanke eingeben → auf die Kugel tippen</p>
 
-      <section id="reflectionSequence" class="reflection-sequence hidden" aria-live="polite">
-        <p class="reveal-line" id="reveal1">Für heute hast du deine Nachricht der Kugel erhalten.</p>
-        <p class="reveal-line" id="reveal2">Nun denke darüber nach.</p>
-        <p class="reveal-line" id="reveal3">Lass sie nach innen sinken.</p>
-        <p class="reveal-line" id="reveal4">Wenn du die Antwort in dir hörst, schreib sie hier auf.</p>
-
-        <div id="innerAnswerWrap" class="inner-answer-wrap">
-          <label class="sr-only" for="innerAnswer">Deine innere Antwort</label>
-          <textarea id="innerAnswer" rows="4" maxlength="900" placeholder="Was hörst du in dir?"></textarea>
-          <button id="releaseButton" class="release-button" type="button">Dem Universum übergeben</button>
-        </div>
-      </section>
-
       <section id="sealedMessage" class="sealed-message hidden" aria-live="polite">
-        <p>Die Kugel hat dein Geheimnis verschlossen.</p>
-        <p>Lass es nun los.</p>
-        <p>Es ist gelöst vom Universum.</p>
+        <p>Dein Geheimnis ist fort.</p>
+        <p>Für immer verschlossen.</p>
+        <p>Ans Universum übergeben.</p>
       </section>
     </section>
   </main>
