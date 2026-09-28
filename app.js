@@ -23,6 +23,48 @@ const reflectionLines = [
   "Wenn du die Antwort in dir hörst, schreib sie hier auf."
 ];
 
+const FIRST_ANSWER_VISIBLE_MS = 9500;
+const REFLECTION_START_DELAY_MS = 10500;
+const REFLECTION_LINE_GAP_MS = 5200;
+const BOX_OPEN_EXTRA_DELAY_MS = 2600;
+
+const boxOpenSound = new Audio("assets/door-open-86191.mp3?v=20260928-2305");
+boxOpenSound.preload = "auto";
+boxOpenSound.volume = 0.92;
+let boxSoundUnlocked = false;
+
+function unlockBoxOpenSound(){
+  if(boxSoundUnlocked) return;
+  const previousVolume = boxOpenSound.volume;
+  boxOpenSound.volume = 0;
+  const attempt = boxOpenSound.play();
+  if(attempt && typeof attempt.then === "function"){
+    attempt.then(()=>{
+      boxOpenSound.pause();
+      boxOpenSound.currentTime = 0;
+      boxOpenSound.volume = previousVolume;
+      boxSoundUnlocked = true;
+    }).catch(()=>{
+      boxOpenSound.volume = previousVolume;
+    });
+  } else {
+    boxOpenSound.volume = previousVolume;
+  }
+}
+
+function playBoxOpenSound(){
+  try{
+    boxOpenSound.currentTime = 0;
+    boxOpenSound.volume = 0.92;
+    const attempt = boxOpenSound.play();
+    if(attempt && typeof attempt.catch === "function"){
+      attempt.catch(()=>playCreak());
+    }
+  }catch{
+    playCreak();
+  }
+}
+
 let ritualTimers = [];
 let audioContext = null;
 
@@ -387,7 +429,7 @@ async function openSecretBox(){
   thoughtWrap.classList.add("hidden");
   hint.classList.add("hidden");
   orb.classList.add("box-mode");
-  playCreak();
+  playBoxOpenSound();
   await swapFrame(BOX_OPEN,"Geöffnete magische Box");
   boxInputWrap.classList.remove("hidden");
   requestAnimationFrame(()=>boxInputWrap.classList.add("visible"));
@@ -398,12 +440,14 @@ async function openSecretBox(){
 
 function startHiddenReflection(){
   clearRitualTimers();
+
   ritualTimers.push(setTimeout(()=>{
     orb.classList.add("wild-glow");
     makeSparks();
-  },4500));
-  ritualTimers.push(setTimeout(makeSparks,5150));
-  ritualTimers.push(setTimeout(makeSparks,5800));
+  },FIRST_ANSWER_VISIBLE_MS-2000));
+
+  ritualTimers.push(setTimeout(makeSparks,FIRST_ANSWER_VISIBLE_MS-1200));
+  ritualTimers.push(setTimeout(makeSparks,FIRST_ANSWER_VISIBLE_MS-450));
 
   ritualTimers.push(setTimeout(()=>{
     orb.classList.remove("wild-glow");
@@ -411,20 +455,27 @@ function startHiddenReflection(){
     hint.classList.add("hidden");
     orb.classList.remove("has-answer");
     answer.textContent="";
-  },6500));
+  },FIRST_ANSWER_VISIBLE_MS));
 
-  [7000,9600,12200,14800].forEach((delay,index)=>{
+  reflectionLines.forEach((line,index)=>{
+    const delay=REFLECTION_START_DELAY_MS+(index*REFLECTION_LINE_GAP_MS);
     ritualTimers.push(setTimeout(()=>{
-      revealOrbLine(reflectionLines[index]);
+      revealOrbLine(line);
       if(index===1||index===3) makeSparks();
     },delay));
   });
 
-  ritualTimers.push(setTimeout(()=>{openSecretBox()},17800));
+  const boxOpenDelay=
+    REFLECTION_START_DELAY_MS+
+    (reflectionLines.length*REFLECTION_LINE_GAP_MS)+
+    BOX_OPEN_EXTRA_DELAY_MS;
+
+  ritualTimers.push(setTimeout(()=>{openSecretBox()},boxOpenDelay));
 }
 
 async function cast(){
   if(busy||orb.classList.contains("box-mode")) return;
+  unlockBoxOpenSound();
   const text=thought.value.trim();
   if(!text){thought.focus();return}
 
