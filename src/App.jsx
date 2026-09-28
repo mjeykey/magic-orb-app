@@ -1,4 +1,5 @@
 import React, { useMemo, useRef, useState } from "react";
+import ORB_IMAGE from "./orbImage.js";
 
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
@@ -250,7 +251,8 @@ export default function App() {
       <section className="ritual-card" aria-live="polite">
         <div className={`orb-wrap ${phase === "casting" || phase === "release" || phase === "sealing" ? "casting" : ""}`}>
           <button className="orb" onClick={begin} disabled={busy} aria-label="Magische Kugel fragen">
-            <Mist />
+            <img className="orb-art" src={ORB_IMAGE} alt="Magische Glaskugel" />
+            <span className="orb-globe-effects" aria-hidden="true"><Mist /></span>
             <span className={`orb-answer ${orbTextVisible ? "visible" : ""}`}>{orbText}</span>
           </button>
         </div>
