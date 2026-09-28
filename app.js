@@ -482,14 +482,18 @@ sealButton.addEventListener("click",async()=>{
   requestAnimationFrame(()=>sealedMessage.classList.add("visible"));
 });
 
-askAgainButton.addEventListener("click",()=>{
-  clearRitualTimers();
-  thought.value="";
-  answer.textContent="";
-  orb.classList.remove("has-answer","casting");
-  resetRitual();
-  thought.focus();
-});
+const askAgainButton = document.getElementById("askAgainButton");
+
+if (askAgainButton) {
+  askAgainButton.addEventListener("click",()=>{
+    clearRitualTimers();
+    thought.value="";
+    answer.textContent="";
+    orb.classList.remove("has-answer","casting");
+    resetRitual();
+    thought.focus();
+  });
+}
 
 orb.addEventListener("click",cast);
 thought.addEventListener("keydown",event=>{
