@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#090612" />
+  <title>Magic Orb</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="shell">
+    <section class="ritual" aria-label="Magic Orb">
+      <div class="stage">
+        <button id="orb" class="orb-button" type="button" aria-label="Magische Kugel fragen">
+          <img id="orbArt" class="orb-art" src="assets/orb.webp" alt="Magische Kugel" />
+          <span class="mystic-fog" aria-hidden="true"></span>
+          <span class="answer" id="answer" aria-live="polite"></span>
+          <span class="spark-layer" id="sparkLayer" aria-hidden="true"></span>
+          <div id="secretNote" class="secret-note" aria-hidden="true"></div>
+        </button>
+      </div>
+
+      <p id="sealCaption" class="seal-caption" aria-live="polite"></p>
+
+      <div id="thoughtWrap" class="thought-wrap">
+        <label class="sr-only" for="thought">Dein Gedanke</label>
+        <textarea id="thought" rows="3" maxlength="700" placeholder="Dein Gedanke …"></textarea>
+      </div>
+
+      <p class="hint" id="hint">Gedanke eingeben → auf die Kugel tippen</p>
+
+      <section id="reflectionSequence" class="reflection-sequence hidden" aria-live="polite">
+        <p class="reveal-line" id="reveal1">Für heute hast du deine Nachricht der Kugel erhalten.</p>
+        <p class="reveal-line" id="reveal2">Nun denke darüber nach.</p>
+        <p class="reveal-line" id="reveal3">Lass sie nach innen sinken.</p>
+        <p class="reveal-line" id="reveal4">Wenn du die Antwort in dir hörst, schreib sie hier auf.</p>
+
+        <div id="innerAnswerWrap" class="inner-answer-wrap">
+          <label class="sr-only" for="innerAnswer">Deine innere Antwort</label>
+          <textarea id="innerAnswer" rows="4" maxlength="900" placeholder="Was hörst du in dir?"></textarea>
+          <button id="releaseButton" class="release-button" type="button">Dem Universum übergeben</button>
+        </div>
+      </section>
+
+      <section id="sealedMessage" class="sealed-message hidden" aria-live="polite">
+        <p>Die Kugel hat dein Geheimnis verschlossen.</p>
+        <p>Lass es nun los.</p>
+        <p>Es ist gelöst vom Universum.</p>
+      </section>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
