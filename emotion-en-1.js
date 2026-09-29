@@ -19,4 +19,4 @@ window.EMOTION_EN=(window.EMOTION_EN||[]).concat([
 ["social_anxiety",["social anxiety","afraid of people","nervous around people"],["You do not have to look perfect to belong.","One small connection is enough for today."]],
 ["performance_anxiety",["performance anxiety","nervous before a presentation","exam nerves"],["Nervousness does not mean you are unprepared.","You do not have to be perfect, only present."]],
 ["imposter",["imposter","impostor","fraud","don't deserve this"],["You do not have to feel like an expert to be capable.","Your place is not automatically a mistake."]]
-);
+]);
