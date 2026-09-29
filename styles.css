@@ -91,10 +91,11 @@ body::before{
   inset:11% 12% 17% 12%;
   border-radius:50%;
   pointer-events:none;
-  opacity:0;
+  opacity:.18;
   mix-blend-mode:screen;
-  transition:opacity .45s ease;
+  transition:opacity .65s ease,filter .65s ease;
   overflow:hidden;
+  filter:saturate(.95);
 }
 .mystic-fog::before,
 .mystic-fog::after{
@@ -114,17 +115,50 @@ body::before{
       transparent 84%,
       rgba(249,214,132,.42) 92%,
       transparent 100%);
-  filter:blur(18px);
-  animation:swirl 7s linear infinite;
+  filter:blur(19px);
+  transform-origin:48% 52%;
+  animation:fogDriftA 14s ease-in-out infinite alternate;
 }
 .mystic-fog::after{
   inset:6%;
-  animation-direction:reverse;
-  animation-duration:5.2s;
-  opacity:.85;
-  filter:blur(12px);
+  opacity:.72;
+  filter:blur(14px);
+  transform-origin:54% 46%;
+  animation:fogDriftB 18s ease-in-out infinite alternate;
 }
-.orb-button.casting .mystic-fog{opacity:.72}
+.orb-button.casting .mystic-fog{
+  opacity:.82;
+  filter:saturate(1.18) brightness(1.08);
+}
+.orb-button.has-answer .mystic-fog{
+  opacity:.48;
+  filter:saturate(1.08) brightness(1.04);
+}
+.orb-button.casting .mystic-fog::before{
+  animation-duration:5.8s;
+}
+.orb-button.casting .mystic-fog::after{
+  animation-duration:7.2s;
+}
+.orb-button.has-answer .mystic-fog::before{
+  animation-duration:9s;
+}
+.orb-button.has-answer .mystic-fog::after{
+  animation-duration:11s;
+}
+
+@keyframes fogDriftA{
+  0%{transform:translate(-7%,-2%) scale(1.02) rotate(-6deg)}
+  33%{transform:translate(5%,4%) scale(1.12) rotate(7deg)}
+  66%{transform:translate(-2%,7%) scale(1.07) rotate(14deg)}
+  100%{transform:translate(7%,-5%) scale(1.15) rotate(22deg)}
+}
+@keyframes fogDriftB{
+  0%{transform:translate(6%,5%) scale(1.08) rotate(8deg)}
+  33%{transform:translate(-6%,-4%) scale(1.15) rotate(-4deg)}
+  66%{transform:translate(4%,-7%) scale(1.06) rotate(-14deg)}
+  100%{transform:translate(-5%,6%) scale(1.13) rotate(-23deg)}
+}
 .answer{
   position:absolute;
   left:50%;
