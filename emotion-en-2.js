@@ -19,4 +19,4 @@ window.EMOTION_EN=(window.EMOTION_EN||[]).concat([
 ["unrequited_love",["unrequited love","he doesn't love me","she doesn't love me","they don't love me back"],["Unreturned love does not make your feelings wrong.","Your heart deserves reciprocity."]],
 ["breakup_recovery",["getting over my ex","after breakup","breakup recovery"],["Healing is not linear.","A wave of memories is not a step backward."]],
 ["relationship_doubt",["relationship doubts","do I still love him","do I still love her","do I still love them"],["Doubt is information, not an immediate decision.","Love alone does not answer every question."]]
-);
+]);
