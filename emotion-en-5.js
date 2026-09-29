@@ -19,4 +19,4 @@ window.EMOTION_EN=(window.EMOTION_EN||[]).concat([
 ["enthusiasm",["enthusiastic","excited about this"],["Let the energy be real.","You do not have to tone down your excitement."]],
 ["satisfaction",["satisfied with this","satisfied with myself"],["Notice what is already good enough.","You do not have to turn every good moment into the next goal."]],
 ["amazement",["astonished","amazed","wow"],["Let yourself be surprised for a moment.","Not everything needs an immediate explanation."]]
-);
+]);
