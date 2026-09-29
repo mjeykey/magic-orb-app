@@ -4,4 +4,4 @@ window.EXTRA_EMOTIONS=(window.EXTRA_EMOTIONS||[]).concat([
 ["freedom",["frei","freiheit"],["Freiheit darf ungewohnt sein.","Du darfst deinen Raum spüren."]],
 ["independence",["unabhängig","unabhaengig"],["Du darfst deinen eigenen Weg wählen.","Eigenständigkeit darf leicht werden."]],
 ["contentment",["zufrieden","zufriedenheit"],["Zufriedenheit darf genug sein.","Nicht jeder gute Moment muss größer werden."]]
-);
+]);
