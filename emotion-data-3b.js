@@ -9,4 +9,4 @@ window.EXTRA_EMOTIONS=(window.EXTRA_EMOTIONS||[]).concat([
 ["work_overload",["zu viel arbeit","arbeitsüberlastung","arbeitsueberlastung"],["Nicht alles, was auf deinem Tisch liegt, gehört heute auf deine Schultern.","Priorität bedeutet auch, Dinge nicht zu tun."]],
 ["boss_conflict",["chef problem","chef nervt"],["Du darfst professionell bleiben und trotzdem Grenzen haben.","Nicht jede Autorität hat automatisch recht."]],
 ["coworker_conflict",["kollege nervt","kollegin nervt"],["Nicht jede Spannung muss persönlich werden.","Klare Worte sind oft hilfreicher als stiller Groll."]]
-);
+]);
