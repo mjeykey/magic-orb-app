@@ -1,0 +1,22 @@
+window.EMOTION_PT=(window.EMOTION_PT||[]).concat([
+["overthinking",["pensar demais","não paro de pensar","nao paro de pensar","dar voltas à cabeça","dar voltas a cabeca"],["Não precisas de levar todos os pensamentos até ao fim.","Às vezes a clareza chega quando a mente abranda."]],
+["jealousy",["ciúmes","ciumes","ciumento","ciumenta"],["Os ciúmes muitas vezes apontam para medo, não para verdade.","Comparar-te diz pouco sobre o teu valor."]],
+["anger",["raiva","zangado","zangada","furioso","furiosa"],["A raiva muitas vezes mostra onde um limite foi ultrapassado.","Podes sentir raiva sem deixar que ela decida por ti."]],
+["sadness",["triste","tristeza","chorar","a chorar"],["A tristeza não precisa de desaparecer já.","Podes estar triste sem ter de explicar tudo."]],
+["grief",["luto","perda","saudades de quem partiu"],["O luto não tem um calendário certo.","Aquilo que falta pode continuar a ser importante."]],
+["shame",["vergonha","envergonhado","envergonhada"],["A vergonha quer que te escondas. A verdade pode trazer-te de volta.","Um momento não define quem tu és."]],
+["guilt",["culpa","culpado","culpada","peso na consciência","peso na consciencia"],["A culpa pode ser um sinal, mas não precisa de ser uma casa.","Assumir responsabilidade ajuda mais do que castigar-te."]],
+["regret",["arrependido","arrependida","arrependimento"],["Hoje sabes coisas que naquele momento não sabias.","O arrependimento pode dar direção sem te prender ao passado."]],
+["envy",["inveja","invejoso","invejosa"],["A inveja às vezes mostra aquilo que também desejas.","A vida dos outros não é a medida do teu caminho."]],
+["frustration",["frustrado","frustrada","frustração","frustracao"],["Estar frustrado não significa que falhaste.","Talvez precises de outro caminho, não de mais pressão."]],
+["disappointment",["desiludido","desiludida","desilusão","desilusao"],["A desilusão mostra que aquilo era importante para ti.","Podes voltar a decidir aquilo de que precisas agora."]],
+["confusion",["confuso","confusa","confusão","confusao","não sei","nao sei"],["A confusão muitas vezes é uma passagem, não um fim.","Ainda não tens de perceber tudo."]],
+["indecision",["indeciso","indecisa","não consigo decidir","nao consigo decidir"],["Não precisas de certeza absoluta para escolher.","Que opção te trará mais paz a longo prazo?"]],
+["fear_failure",["medo de falhar","tenho medo de falhar","falhar"],["Falhar é um acontecimento, não uma identidade.","Não tens de garantir o sucesso antes de começar."]],
+["fear_rejection",["medo de rejeição","medo de rejeicao","ser rejeitado","ser rejeitada"],["A rejeição não diz tudo sobre o teu valor.","Nem todas as portas fechadas eram para ti."]],
+["fear_abandonment",["medo de ser abandonado","medo de ser abandonada","medo que me deixe"],["A proximidade não fica mais segura quando te abandonas a ti próprio.","O medo de perder não é prova de que vais perder."]],
+["fear_future",["medo do futuro","o futuro assusta-me","e se"],["O amanhã ainda não chegou.","O próximo passo real é suficiente."]],
+["social_anxiety",["ansiedade social","nervoso com pessoas","nervosa com pessoas"],["Não tens de parecer perfeito para pertencer.","Um pequeno contacto chega por hoje."]],
+["performance_anxiety",["nervoso antes de apresentar","nervosa antes de apresentar","ansiedade de desempenho","nervos no exame"],["Estar nervoso não significa que não estejas preparado.","Não tens de ser perfeito, apenas presente."]],
+["imposter",["síndrome do impostor","sindrome do impostor","sou uma fraude","não mereço isto","nao mereco isto"],["Não precisas de te sentir especialista para seres capaz.","O teu lugar não é automaticamente um engano."]]
+);
