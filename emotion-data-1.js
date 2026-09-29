@@ -24,4 +24,4 @@ window.EXTRA_EMOTIONS=(window.EXTRA_EMOTIONS||[]).concat([
 ["body_insecurity",["zu dick","zu dünn","zu duenn","hässlich","haesslich"],["Dein Körper ist mehr als etwas, das bewertet werden muss.","Du musst dich heute nicht schön finden, um freundlich mit dir zu sein."]],
 ["comparison",["vergleiche mich","vergleich","besser als ich"],["Du siehst bei anderen oft das Ergebnis und bei dir den ganzen Weg.","Dein Tempo muss nicht ihres sein."]],
 ["perfectionism",["perfektion","perfektionist","perfekt sein"],["Perfekt ist oft nur eine andere Form von Aufschieben.","Gut genug darf wirklich genug sein."]]
-);
+]);
