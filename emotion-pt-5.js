@@ -19,4 +19,4 @@ window.EMOTION_PT=(window.EMOTION_PT||[]).concat([
 ["enthusiasm",["entusiasmado","entusiasmada","entusiasmo"],["Deixa essa energia ser real.","Não precisas de diminuir o teu entusiasmo."]],
 ["satisfaction",["satisfeito comigo","satisfeita comigo","satisfeito com isto","satisfeita com isto"],["Repara no que já é suficientemente bom.","Não precisas de transformar cada momento bom no próximo objetivo."]],
 ["amazement",["admirado","admirada","espantado","espantada"],["Deixa-te surpreender por um momento.","Nem tudo precisa de uma explicação imediata."]]
-);
+]);
