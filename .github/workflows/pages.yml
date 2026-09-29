@@ -23,14 +23,55 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+
+      - name: Prepare site
+        shell: bash
+        run: |
+          mkdir -p _site
+          rsync -a --exclude='.git' --exclude='_site' ./ _site/
+          python - <<'PY'
+          from pathlib import Path
+          p=Path("_site/index.html")
+          s=p.read_text(encoding="utf-8")
+          marker='<script src="app.js?v=20260929-0812"></script>'
+          extras='''<script src="emotion-data-1.js"></script>
+          <script src="emotion-data-2.js"></script>
+          <script src="emotion-data-3b.js"></script>
+          <script src="emotion-data-5.js"></script>
+          <script src="emotion-data-12.js"></script>
+          <script src="emotion-data-14.js"></script>
+          <script src="emotion-data-15.js"></script>
+          <script src="emotion-data-19.js"></script>
+          ''' + marker
+          s=s.replace(marker,extras)
+          p.write_text(s,encoding="utf-8")
+          PY
+          cat >> _site/app.js <<'JS'
+          window.EXTRA_EMOTIONS=(window.EXTRA_EMOTIONS||[]).concat([
+            ["ease",["fuehlt sich leicht an"],["Leichtigkeit darf ein Hinweis sein.","Nicht alles Gute muss schwer sein."]],
+            ["presence",["im moment"],["Bleib bei diesem Moment.","Hier ist gerade genug."]],
+            ["certainty",["weiss was ich will"],["Klarheit darf einfach klar sein.","Du darfst deiner Entscheidung vertrauen."]],
+            ["momentum",["komme voran"],["Fortschritt darf sichtbar werden.","Mach mit dem naechsten kleinen Schritt weiter."]],
+            ["openness",["offen fuer etwas"],["Offenheit braucht keine Eile.","Du darfst erst einmal schauen, was kommt."]],
+            ["rested",["ausgeruht"],["Nimm die neue Kraft wahr.","Du darfst sie bewusst einsetzen."]],
+            ["accomplished",["etwas geschafft"],["Nimm dir einen Moment fuer das, was du geschafft hast.","Fortschritt verdient Aufmerksamkeit."]],
+            ["lighthearted",["unbeschwert"],["Leichtigkeit darf bleiben.","Du darfst diesen Moment geniessen."]],
+            ["curious_future",["neugierig auf morgen"],["Du darfst gespannt sein, ohne alles zu planen.","Lass etwas Raum fuer Ueberraschung."]],
+            ["warmth",["warm ums herz"],["Halte diesen warmen Moment kurz fest.","Manches darf einfach gut tun."]]
+          ]);
+          (()=>{const q=window.EXTRA_EMOTIONS||[];const b=document.getElementById("orb");const t=document.getElementById("thought");if(!b||!t)return;b.addEventListener("click",()=>{const n=normalizeText(t.value||"");const m=q.find(([,w])=>w.some(x=>n.includes(normalizeText(x))));if(!m)return;const old={};Object.keys(responses).forEach(k=>{old[k]=responses[k];responses[k]=m[2];});setTimeout(()=>Object.keys(old).forEach(k=>responses[k]=old[k]),2600);},true);})();
+          JS
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
           enablement: true
+
       - name: Upload site
         uses: actions/upload-pages-artifact@v4
         with:
-          path: .
+          path: ./_site
+
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
