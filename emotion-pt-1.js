@@ -19,4 +19,4 @@ window.EMOTION_PT=(window.EMOTION_PT||[]).concat([
 ["social_anxiety",["ansiedade social","nervoso com pessoas","nervosa com pessoas"],["Não tens de parecer perfeito para pertencer.","Um pequeno contacto chega por hoje."]],
 ["performance_anxiety",["nervoso antes de apresentar","nervosa antes de apresentar","ansiedade de desempenho","nervos no exame"],["Estar nervoso não significa que não estejas preparado.","Não tens de ser perfeito, apenas presente."]],
 ["imposter",["síndrome do impostor","sindrome do impostor","sou uma fraude","não mereço isto","nao mereco isto"],["Não precisas de te sentir especialista para seres capaz.","O teu lugar não é automaticamente um engano."]]
-);
+]);
