@@ -1,0 +1,22 @@
+window.EMOTION_EN=(window.EMOTION_EN||[]).concat([
+["conflict",["argument","conflict","we keep fighting"],["Conflict is often about more than the last sentence.","You are allowed to pause before continuing the conversation."]],
+["boundaries",["boundaries","say no","my no is ignored"],["A boundary does not need a long explanation.","No is a complete sentence."]],
+["people_pleasing",["people pleasing","please everyone","can't say no"],["You do not have to be pleasant everywhere to remain lovable.","One honest no can protect a truer yes."]],
+["approval_seeking",["need approval","need validation","need recognition"],["Outside validation rarely lasts very long.","You do not have to be understood by everyone."]],
+["feeling_unseen",["feel unseen","nobody sees me","invisible"],["Being unseen does not mean there is nothing to see.","Maybe you need different eyes, not a different worth."]],
+["feeling_unheard",["not listening to me","feel unheard","nobody hears me"],["You are allowed to expect to be heard.","Repeating yourself does not make your truth less true."]],
+["rejection",["rejected","turned down"],["Rejection hurts, but it is not a final statement about you.","A no can redirect you without diminishing you."]],
+["failure",["failed","I failed"],["One result is not a verdict on your whole ability.","You can begin again without starting from zero."]],
+["mistake",["made a mistake","messed up","did it wrong"],["A mistake is information.","You can correct something without condemning yourself."]],
+["embarrassment",["embarrassed","humiliated in public","so embarrassing"],["Other people usually remember it for less time than you do.","You were allowed to be human."]],
+["uncertainty",["uncertain","uncertainty","not sure"],["Uncertainty is uncomfortable, not automatically dangerous.","You can wait until you know more."]],
+["change_fear",["afraid of change","change scares me"],["Change can feel scary and still be right.","A new path rarely feels familiar at first."]],
+["starting_over",["starting over","begin again","start again"],["Starting over does not make everything before it pointless.","You bring experience with you."]],
+["transition",["transition","in between","between phases"],["Transitions often feel messier than they really are.","You do not have to have arrived yet."]],
+["career_stress",["career stress","work stress","job stress"],["Your job is part of your life, not your whole worth.","Not every career problem needs a final decision today."]],
+["job_search",["job search","applying for jobs","can't find a job"],["A rejection is data, not a verdict.","The right role only needs one real yes."]],
+["interview_nerves",["job interview","interview nerves","nervous for interview"],["Nerves can exist beside competence.","You do not have to answer perfectly, only honestly and clearly."]],
+["work_overload",["too much work","overloaded at work","workload"],["Not everything on your desk belongs on your shoulders today.","Prioritizing also means leaving some things undone."]],
+["boss_conflict",["boss problem","my boss annoys me","conflict with boss"],["You can stay professional and still have boundaries.","Authority is not the same as always being right."]],
+["coworker_conflict",["coworker annoys me","conflict with coworker","colleague problem"],["Not every tension has to become personal.","Clear words often help more than silent resentment."]]
+);
