@@ -70,7 +70,6 @@ jobs:
             ["curious_future",["neugierig auf morgen"],["Du darfst gespannt sein, ohne alles zu planen.","Lass etwas Raum fuer Ueberraschung."]],
             ["warmth",["warm ums herz"],["Halte diesen warmen Moment kurz fest.","Manches darf einfach gut tun."]]
           ]);
-          (()=>{const q=window.EXTRA_EMOTIONS||[];const b=document.getElementById("orb");const t=document.getElementById("thought");if(!b||!t)return;b.addEventListener("click",()=>{const n=normalizeText(t.value||"");const m=q.find(([,w])=>w.some(x=>n.includes(normalizeText(x))));if(!m)return;const old={};Object.keys(responses).forEach(k=>{old[k]=responses[k];responses[k]=m[2];});setTimeout(()=>Object.keys(old).forEach(k=>responses[k]=old[k]),2600);},true);})();
 
           const ritualLinesByLanguage={
             de:[
@@ -93,19 +92,42 @@ jobs:
             ]
           };
 
+          function detectInputLanguage(text){
+            const n=normalizeText(text||"");
+            const enSignals=["i am ","i'm ","im ","i feel ","my ","me ","can't ","cant ","don't ","dont ","frustrated","sad","angry","worried","happy","confused","nervous","lonely"];
+            const ptSignals=["estou ","sinto ","me sinto ","nao ","não ","tenho ","meu ","minha ","muito ","muita ","triste","zangado","zangada","preocupado","preocupada","feliz"];
+            const deSignals=["ich ","mir ","mich ","mein ","meine ","bin ","fühle ","fuehle ","nicht ","sehr ","traurig","wütend","wuetend","ängstlich","aengstlich"];
+            const score=(signals)=>signals.reduce((sum,s)=>sum+(n.includes(normalizeText(s))?1:0),0);
+            const scores={en:score(enSignals),pt:score(ptSignals),de:score(deSignals)};
+            const best=Object.entries(scores).sort((a,b)=>b[1]-a[1])[0];
+            return best[1]>0?best[0]:null;
+          }
+
           function findLanguageEmotion(text){
             const normalized=normalizeText(text||"");
-            const packs=[
-              ["pt",window.EMOTION_PT||[]],
-              ["en",window.EMOTION_EN||[]],
-              ["de",window.EXTRA_EMOTIONS||[]]
-            ];
-            for(const [lang,pack] of packs){
+            const detected=detectInputLanguage(text);
+            const ordered=detected
+              ? [[detected,detected==="en"?(window.EMOTION_EN||[]):detected==="pt"?(window.EMOTION_PT||[]):(window.EXTRA_EMOTIONS||[])]]
+              : [
+                  ["en",window.EMOTION_EN||[]],
+                  ["pt",window.EMOTION_PT||[]],
+                  ["de",window.EXTRA_EMOTIONS||[]]
+                ];
+
+            for(const [lang,pack] of ordered){
               for(const item of pack){
                 const words=item[1]||[];
                 if(words.some(word=>normalized.includes(normalizeText(word)))){
                   return {lang,lines:item[2]};
                 }
+              }
+            }
+
+            if(detected){
+              const fallbackPack=detected==="en"?(window.EMOTION_EN||[]):detected==="pt"?(window.EMOTION_PT||[]):(window.EXTRA_EMOTIONS||[]);
+              if(fallbackPack.length){
+                const general=fallbackPack.find(item=>item[0]==="calm"||item[0]==="clarity"||item[0]==="hope")||fallbackPack[0];
+                return {lang:detected,lines:general[2]};
               }
             }
             return null;
@@ -122,17 +144,27 @@ jobs:
             const nextLines=ritualLinesByLanguage[hit.lang]||ritualLinesByLanguage.de;
             reflectionLines.splice(0,reflectionLines.length,...nextLines);
 
+            const sealedLines=sealedMessage.querySelectorAll("p");
             if(hit.lang==="en"){
               boxSecret.placeholder="Write your secret here …";
               sealButton.textContent="Give it to the universe";
+              if(sealedLines[0]) sealedLines[0].textContent="Your secret is gone.";
+              if(sealedLines[1]) sealedLines[1].textContent="Locked away forever.";
+              if(sealedLines[2]) sealedLines[2].textContent="Given to the universe.";
               hint.textContent="";
             }else if(hit.lang==="pt"){
               boxSecret.placeholder="Escreve aqui o teu segredo …";
               sealButton.textContent="Entregar ao universo";
+              if(sealedLines[0]) sealedLines[0].textContent="O teu segredo partiu.";
+              if(sealedLines[1]) sealedLines[1].textContent="Fechado para sempre.";
+              if(sealedLines[2]) sealedLines[2].textContent="Entregue ao universo.";
               hint.textContent="";
             }else{
               boxSecret.placeholder="Schreib dein Geheimnis hier hinein …";
               sealButton.textContent="Ans Universum übergeben";
+              if(sealedLines[0]) sealedLines[0].textContent="Dein Geheimnis ist fort.";
+              if(sealedLines[1]) sealedLines[1].textContent="Für immer verschlossen.";
+              if(sealedLines[2]) sealedLines[2].textContent="Ans Universum übergeben.";
               hint.textContent="";
             }
           },true);
