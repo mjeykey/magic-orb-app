@@ -19,4 +19,4 @@ window.EMOTION_PT=(window.EMOTION_PT||[]).concat([
 ["unrequited_love",["amor não correspondido","amor nao correspondido","ele não me ama","ela não me ama"],["Um amor não correspondido não torna os teus sentimentos errados.","O teu coração merece reciprocidade."]],
 ["breakup_recovery",["superar o ex","depois da separação","depois da separacao","recuperar de uma separação"],["A cura não é linear.","Uma onda de memórias não é um passo atrás."]],
 ["relationship_doubt",["dúvidas na relação","duvidas na relacao","ainda o amo","ainda a amo"],["As dúvidas são informação, não uma decisão imediata.","O amor, sozinho, não responde a todas as perguntas."]]
-);
+]);
