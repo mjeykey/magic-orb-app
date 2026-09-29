@@ -1,0 +1,22 @@
+window.EMOTION_PT=(window.EMOTION_PT||[]).concat([
+["readiness",["pronto","pronta","estou pronto","estou pronta"],["Estar pronto não precisa de parecer perfeito.","Talvez já haja clareza suficiente para começar."]],
+["renewal",["novo começo","recomeço","recomeco","renovação","renovacao"],["Algo novo pode começar em silêncio.","Não tens de continuar a ser exatamente a mesma versão de ti."]],
+["peace",["paz","paz interior"],["Não precisas de explicar esta paz.","Deixa-a ficar por um momento."]],
+["balance",["equilíbrio","equilibrio","equilibrado","equilibrada"],["O equilíbrio não é um estado fixo.","Podes reajustar sempre que precisares."]],
+["grounded",["com os pés no chão","centrado","centrada"],["Fica com aquilo que está realmente aqui.","O próximo passo está mais perto do que as tuas preocupações."]],
+["ease",["parece fácil","parece facil","leveza"],["A leveza pode ser um sinal.","Nem tudo o que é bom tem de ser difícil."]],
+["warmth",["calor por dentro","coração quentinho","coracao quentinho"],["Guarda este momento quente por um pouco.","Algumas coisas podem simplesmente saber bem."]],
+["presence",["presente","no momento","aqui e agora"],["Fica neste momento.","Por agora, isto chega."]],
+["certainty",["sei o que quero","tenho a certeza","certeza"],["A clareza pode continuar simples.","Podes confiar na tua decisão."]],
+["momentum",["estou a avançar","estou a avancar","progresso","a avançar","a avancar"],["O progresso pode ser visível.","Continua com o próximo pequeno passo."]],
+["openness",["aberto a algo","aberta a algo","mente aberta"],["A abertura não precisa de pressa.","Podes primeiro ver o que chega."]],
+["rested",["descansado","descansada","recuperado","recuperada"],["Repara na energia nova.","Podes usá-la de forma consciente."]],
+["accomplished",["consegui","alcancei","realizei algo"],["Reserva um momento para aquilo que conseguiste.","O progresso merece atenção."]],
+["lighthearted",["leve","descontraído","descontraida","descontraída"],["A leveza pode ficar.","Não precisas de a encher logo com preocupações."]],
+["curious_future",["curioso com o amanhã","curiosa com o amanhã","curioso com o futuro","curiosa com o futuro"],["Podes estar curioso sem planear tudo.","Deixa algum espaço para a surpresa."]],
+["pride",["orgulhoso","orgulhosa","orgulho de mim"],["Repara no caminho que já fizeste.","Podes sentir orgulho em ti."]],
+["acceptance",["aceitação","aceitacao","aceito isto"],["Aceitar não significa aprovar.","Pode significar parar de lutar contra aquilo que já é verdade."]],
+["enthusiasm",["entusiasmado","entusiasmada","entusiasmo"],["Deixa essa energia ser real.","Não precisas de diminuir o teu entusiasmo."]],
+["satisfaction",["satisfeito comigo","satisfeita comigo","satisfeito com isto","satisfeita com isto"],["Repara no que já é suficientemente bom.","Não precisas de transformar cada momento bom no próximo objetivo."]],
+["amazement",["admirado","admirada","espantado","espantada"],["Deixa-te surpreender por um momento.","Nem tudo precisa de uma explicação imediata."]]
+);
