@@ -1,4 +1,19 @@
 window.EMOTION_EN=(window.EMOTION_EN||[]).concat([
+
+["lonely",["alone","lonely","isolated","left out","no one","nobody","feel alone","all by myself","no one is here","nobody cares","no one understands me"],[
+"You can feel alone without being unwanted.",
+"Being by yourself is not the same as being forgotten.",
+"Sometimes loneliness is not about needing more people, but deeper connection.",
+"You do not need a crowd. You need somewhere you can be real.",
+"Silence around you does not mean there is nothing waiting for you.",
+"Feeling left out can make the whole world seem closed. It is not.",
+"You are allowed to want closeness without settling for the wrong kind.",
+"Loneliness can make distance feel like rejection. They are not always the same.",
+"One quiet night does not describe your whole life.",
+"You do not have to fill the silence with people who make you feel smaller.",
+"Maybe what you miss is not company, but being truly understood.",
+"Being alone right now does not mean you will always feel alone."
+]],
 ["insecurity",["insecure","uncertain about myself"],["Insecurity is a feeling, not a verdict.","Confidence often grows after the first step."]],
 ["low_confidence",["low confidence","no confidence","don't trust myself"],["Confidence often comes after action, not before it.","You only need enough courage for one small attempt."]],
 ["body_insecurity",["hate my body","too fat","too thin","ugly"],["Your body is more than something to be judged.","You do not have to feel beautiful to treat yourself kindly."]],
