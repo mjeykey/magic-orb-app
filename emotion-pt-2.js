@@ -1,0 +1,22 @@
+window.EMOTION_PT=(window.EMOTION_PT||[]).concat([
+["insecurity",["inseguro","insegura","insegurança","inseguranca"],["A insegurança é um sentimento, não uma sentença.","A confiança muitas vezes cresce depois do primeiro passo."]],
+["low_confidence",["pouca confiança","sem confiança em mim","não confio em mim","nao confio em mim"],["A confiança em ti muitas vezes vem depois da ação, não antes.","Só precisas de coragem suficiente para uma pequena tentativa."]],
+["body_insecurity",["não gosto do meu corpo","nao gosto do meu corpo","muito gordo","muito gorda","muito magro","muito magra","feio","feia"],["O teu corpo é mais do que algo para ser avaliado.","Não tens de te achar bonito para te tratares com gentileza."]],
+["comparison",["comparar-me","comparação","comparacao","melhor do que eu"],["Nos outros vês muitas vezes o resultado; em ti, vês o caminho todo.","O teu ritmo não tem de ser o mesmo dos outros."]],
+["perfectionism",["perfeccionismo","perfeito","tem de ser perfeito"],["Perfeito é muitas vezes outra forma de adiar.","Bom o suficiente pode mesmo ser suficiente."]],
+["procrastination",["procrastinar","procrastinação","procrastinacao","adiar"],["Torna a tarefa menor, não mais dramática.","Cinco minutos também contam."]],
+["motivation_low",["sem motivação","sem motivacao","desmotivado","desmotivada"],["A motivação nem sempre vem primeiro.","Hoje não precisas de uma força enorme para começar."]],
+["boredom",["aborrecido","aborrecida","tédio","tedio"],["O tédio pode ser espaço, não apenas vazio.","Talvez a tua mente precise de algo novo, não de mais estímulo."]],
+["restlessness",["inquieto","inquieta","não consigo estar quieto","nao consigo estar quieto"],["Nem toda a inquietação precisa de ação imediata.","O corpo pode abrandar antes dos pensamentos."]],
+["overstimulation",["sobrecarregado de estímulos","sobrecarregada de estímulos","demasiado barulho","demasiada informação"],["Menos estímulos podem ajudar mais do que mais soluções.","Torna o mundo mais pequeno durante dez minutos."]],
+["irritability",["irritado","irritada","impaciente","nervoso com tudo"],["A irritação é muitas vezes cansaço com uma voz mais afiada.","Talvez precises de espaço antes de responder."]],
+["resentment",["ressentimento","guardar rancor","rancor"],["O ressentimento muitas vezes prende-te mais tempo do que prende a outra pessoa.","Um limite pode ajudar mais do que repetir a história na cabeça."]],
+["betrayal",["traído","traida","traída","traição","traicao"],["A traição muda a confiança, não o teu valor.","Podes tornar-te mais cauteloso sem te tornares duro."]],
+["trust_issues",["problemas de confiança","não confio em ninguém","nao confio em ninguem","custa-me confiar"],["A confiança pode crescer devagar.","A segurança também nasce do comportamento repetido."]],
+["heartache",["dor no coração","dor no coracao","amor dói","amor doi"],["O teu coração pode precisar de tempo.","A dor não é automaticamente um sinal para voltar."]],
+["missing_someone",["tenho saudades dele","tenho saudades dela","tenho saudades"],["Ter saudades não é uma ordem para voltar.","Podes ter saudades de alguém e continuar em frente."]],
+["attachment",["não consigo largar","nao consigo largar","muito agarrado","muito agarrada"],["Desapegar começa muitas vezes antes de o sentimento estar pronto.","A proximidade não te deve afastar de ti."]],
+["unrequited_love",["amor não correspondido","amor nao correspondido","ele não me ama","ela não me ama"],["Um amor não correspondido não torna os teus sentimentos errados.","O teu coração merece reciprocidade."]],
+["breakup_recovery",["superar o ex","depois da separação","depois da separacao","recuperar de uma separação"],["A cura não é linear.","Uma onda de memórias não é um passo atrás."]],
+["relationship_doubt",["dúvidas na relação","duvidas na relacao","ainda o amo","ainda a amo"],["As dúvidas são informação, não uma decisão imediata.","O amor, sozinho, não responde a todas as perguntas."]]
+);
