@@ -1,0 +1,22 @@
+window.EMOTION_EN=(window.EMOTION_EN||[]).concat([
+["curiosity",["curious","curiosity","wondering"],["Curiosity does not need an answer yet.","Maybe you can simply keep looking."]],
+["anticipation",["looking forward to it","anticipation","can't wait"],["Anticipation is allowed to take up space.","You do not have to shrink something good in advance."]],
+["relief",["relieved","relief"],["You can let some of the tension go now.","Relief does not need to become the next worry."]],
+["confidence",["confident","self-confident","I believe in myself"],["Trust the part of you that already has experience.","You do not have to make your confidence smaller."]],
+["determination",["determined","I will do this","I want to make it"],["Determination does not have to be loud.","Stay with the next step."]],
+["inspiration",["inspired","inspiration"],["Follow the spark before you overthink it.","An idea is allowed to be alive before it is finished."]],
+["gratitude",["grateful","gratitude","thankful"],["Notice what was good today.","Gratitude is allowed to simply be here."]],
+["calm",["calm","peaceful","relaxed"],["Stay here for a moment.","Calm does not have to be productive."]],
+["hope",["hopeful","hope"],["Hope is allowed to be quiet.","Hold on to what moves you a little forward."]],
+["joy",["happy","joy","glad"],["You are allowed to simply enjoy this moment.","Joy does not need justification."]],
+["optimism",["optimistic","positive about the future"],["Optimism can be a direction, not a promise.","You are allowed to expect something good."]],
+["focus",["focused","concentrated"],["Stay with one thing.","Clarity often grows through attention."]],
+["clarity",["clarity","it is clear now","I know now"],["If it is clear, you do not have to complicate it again.","Trust the simple truth."]],
+["patience",["patient","patience"],["Not everything needs a result today.","Patience is movement too, only quieter."]],
+["wonder",["amazed","wonder","fascinated"],["Wonder can open spaces that thinking closes.","Stay with that feeling for a moment."]],
+["trust",["trust","I trust"],["Trust grows through many small moments.","Watch what behavior keeps showing you."]],
+["security",["safe","secure","protected"],["Safety is allowed to feel quiet.","You do not have to mistrust a peaceful moment."]],
+["freedom",["free","freedom"],["Freedom can feel unfamiliar at first.","You do not have to return to something narrow just because it was familiar."]],
+["independence",["independent","independence"],["Independence does not mean carrying everything alone.","You are allowed to choose your own path."]],
+["contentment",["content","contentment","satisfied"],["Not every good moment has to become bigger.","Contentment can be enough."]]
+);
