@@ -4,4 +4,4 @@ window.EXTRA_EMOTIONS=(window.EXTRA_EMOTIONS||[]).concat([
 ["clarity",["klarheit","jetzt ist es klar"],["Vertrau der einfachen Wahrheit.","Du musst es nicht komplizierter machen."]],
 ["patience",["geduld","geduldig"],["Nicht alles braucht heute ein Ergebnis.","Geduld darf still sein."]],
 ["wonder",["staunen","fasziniert"],["Bleib kurz bei diesem Staunen.","Neugier darf offen bleiben."]]
-);
+]);
