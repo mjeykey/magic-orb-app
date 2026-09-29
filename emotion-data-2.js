@@ -24,4 +24,4 @@ window.EXTRA_EMOTIONS=(window.EXTRA_EMOTIONS||[]).concat([
 ["failure",["gescheitert","versagt"],["Ein Ergebnis ist kein Urteil über dein ganzes Können.","Du kannst neu anfangen, ohne bei null zu sein."]],
 ["mistake",["fehler gemacht","falsch gemacht"],["Ein Fehler ist Information.","Du darfst korrigieren, ohne dich zu verurteilen."]],
 ["embarrassment",["blamiert","peinlich"],["Andere erinnern sich meist kürzer daran als du.","Du darfst menschlich gewesen sein."]]
-);
+]);
