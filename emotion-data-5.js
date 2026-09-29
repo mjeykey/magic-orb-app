@@ -9,4 +9,4 @@ window.EXTRA_EMOTIONS=(window.EXTRA_EMOTIONS||[]).concat([
 ["calm",["ruhig","gelassen","friedlich","calm"],["Bleib einen Moment hier.","Ruhe muss nicht produktiv sein."]],
 ["hope",["hoffnung","hoffnungsvoll","hopeful"],["Hoffnung darf leise sein.","Halte fest, was dich gerade ein wenig weiterzieht."]],
 ["joy",["freude","glücklich","gluecklich","joy"],["Du darfst diesen Moment einfach mögen.","Freude braucht keine Rechtfertigung."]]
-);
+]);
