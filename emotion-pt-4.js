@@ -1,0 +1,22 @@
+window.EMOTION_PT=(window.EMOTION_PT||[]).concat([
+["curiosity",["curioso","curiosa","curiosidade"],["A curiosidade ainda não precisa de uma resposta.","Talvez possas simplesmente continuar a observar."]],
+["anticipation",["ansioso por","ansiosa por","mal posso esperar","expectativa"],["A expectativa pode ocupar espaço.","Não precisas de diminuir algo bom antes de acontecer."]],
+["relief",["aliviado","aliviada","alívio","alivio"],["Podes largar um pouco da tensão agora.","O alívio não precisa de se transformar logo noutra preocupação."]],
+["confidence",["confiante","autoconfiante","acredito em mim"],["Confia na parte de ti que já tem experiência.","Não precisas de diminuir a tua confiança."]],
+["determination",["determinado","determinada","vou conseguir","quero mesmo fazer isto"],["A determinação não precisa de ser barulhenta.","Fica com o próximo passo."]],
+["inspiration",["inspirado","inspirada","inspiração","inspiracao"],["Segue a faísca antes de a pensares demasiado.","Uma ideia pode estar viva antes de estar pronta."]],
+["gratitude",["grato","grata","gratidão","gratidao"],["Repara no que foi bom hoje.","A gratidão pode simplesmente estar aqui."]],
+["calm",["calmo","calma","tranquilo","tranquila"],["Fica aqui por um momento.","A calma não precisa de ser produtiva."]],
+["hope",["esperança","esperanca","esperançoso","esperancoso"],["A esperança pode ser silenciosa.","Agarra-te ao que te puxa um pouco para a frente."]],
+["joy",["feliz","alegria","contente"],["Podes simplesmente gostar deste momento.","A alegria não precisa de justificação."]],
+["optimism",["otimista","confiante no futuro"],["O otimismo pode ser uma direção, não uma promessa.","Podes esperar algo bom."]],
+["focus",["focado","focada","concentrado","concentrada"],["Fica com uma coisa de cada vez.","A clareza cresce muitas vezes com atenção."]],
+["clarity",["clareza","agora está claro","agora esta claro"],["Se está claro, não precisas de voltar a complicar.","Confia na verdade simples."]],
+["patience",["paciência","paciencia","paciente"],["Nem tudo precisa de um resultado hoje.","A paciência também é movimento, só mais silencioso."]],
+["wonder",["espantado","espantada","fascinado","fascinada"],["O espanto pode abrir espaços que o pensamento fecha.","Fica um pouco com essa sensação."]],
+["trust",["confio","confiança","confianca"],["A confiança cresce em muitos pequenos momentos.","Observa aquilo que o comportamento continua a mostrar."]],
+["security",["seguro","segura","protegido","protegida"],["A segurança pode ser silenciosa.","Não precisas de desconfiar de um momento tranquilo."]],
+["freedom",["livre","liberdade"],["A liberdade pode parecer estranha ao início.","Não precisas de voltar ao que te apertava só porque era familiar."]],
+["independence",["independente","independência","independencia"],["Ser independente não significa carregar tudo sozinho.","Podes escolher o teu próprio caminho."]],
+["contentment",["satisfeito","satisfeita","contente com isto"],["Nem todo o momento bom tem de crescer.","Estar satisfeito pode ser suficiente."]]
+);
