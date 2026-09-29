@@ -19,4 +19,4 @@ window.EMOTION_EN=(window.EMOTION_EN||[]).concat([
 ["freedom",["free","freedom"],["Freedom can feel unfamiliar at first.","You do not have to return to something narrow just because it was familiar."]],
 ["independence",["independent","independence"],["Independence does not mean carrying everything alone.","You are allowed to choose your own path."]],
 ["contentment",["content","contentment","satisfied"],["Not every good moment has to become bigger.","Contentment can be enough."]]
-);
+]);
