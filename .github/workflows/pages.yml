@@ -35,7 +35,7 @@ jobs:
           from pathlib import Path
           p=Path("_site/index.html")
           s=p.read_text(encoding="utf-8")
-          marker='<script src="app.js?v=20260929-1021"></script>'
+          marker='<script src="app.js?v=20260929-1201"></script>'
           extras='''<script src="emotion-data-1.js"></script>
           <script src="emotion-data-2.js"></script>
           <script src="emotion-data-3b.js"></script>
