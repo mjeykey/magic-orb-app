@@ -1,0 +1,22 @@
+window.EMOTION_EN=(window.EMOTION_EN||[]).concat([
+["overthinking",["overthinking","overthink","can't stop thinking","thinking too much"],["You do not have to finish every thought.","Some clarity comes when thinking gets quiet."]],
+["jealousy",["jealous","jealousy"],["Jealousy often points to fear, not truth.","Comparison says little about your worth."]],
+["anger",["angry","anger","furious","mad"],["Anger often shows where a boundary was crossed.","You can feel angry without letting anger lead you."]],
+["sadness",["sad","sadness","crying","feel low"],["Sadness does not have to disappear immediately.","You are allowed to feel sad without explaining everything."]],
+["grief",["grief","grieving","loss","mourning"],["Grief has no fixed timetable.","What is missing is allowed to remain important."]],
+["shame",["shame","ashamed","embarrassed about myself"],["Shame wants you to hide. Truth can bring you back out.","One moment does not define your whole character."]],
+["guilt",["guilty","guilt","bad conscience"],["Guilt can be a signal, but it does not have to become a home.","Responsibility helps more than self-punishment."]],
+["regret",["regret","I regret","wish I hadn't"],["You know things today that you did not know then.","Regret can give direction without holding you in place."]],
+["envy",["envy","envious"],["Envy can reveal what you are missing yourself.","Someone else's life is not the measure of your path."]],
+["frustration",["frustrated","frustration"],["Frustration does not mean you failed.","Maybe you need a different way, not more pressure."]],
+["disappointment",["disappointed","disappointment"],["Disappointment shows that something mattered to you.","You can decide again what you need now."]],
+["confusion",["confused","confusion","I don't know"],["Confusion is often a middle space, not an ending.","You do not have to understand everything yet."]],
+["indecision",["indecisive","can't decide","cannot decide"],["You do not need absolute certainty to choose.","Which option brings you more long-term peace?"]],
+["fear_failure",["afraid to fail","fear of failure","failing"],["Failure is an event, not an identity.","You do not have to guarantee success before you begin."]],
+["fear_rejection",["rejection","afraid of rejection","being rejected"],["Rejection does not tell the whole story of your worth.","Not every closed door was meant for you."]],
+["fear_abandonment",["fear of abandonment","afraid they'll leave","afraid he will leave","afraid she will leave"],["Closeness does not become safer when you abandon yourself.","Fear of loss is not proof of loss."]],
+["fear_future",["afraid of the future","future scares me","what if"],["Tomorrow is not here yet.","The next real step is enough."]],
+["social_anxiety",["social anxiety","afraid of people","nervous around people"],["You do not have to look perfect to belong.","One small connection is enough for today."]],
+["performance_anxiety",["performance anxiety","nervous before a presentation","exam nerves"],["Nervousness does not mean you are unprepared.","You do not have to be perfect, only present."]],
+["imposter",["imposter","impostor","fraud","don't deserve this"],["You do not have to feel like an expert to be capable.","Your place is not automatically a mistake."]]
+);
