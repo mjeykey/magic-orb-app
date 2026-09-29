@@ -1,0 +1,22 @@
+window.EMOTION_EN=(window.EMOTION_EN||[]).concat([
+["insecurity",["insecure","uncertain about myself"],["Insecurity is a feeling, not a verdict.","Confidence often grows after the first step."]],
+["low_confidence",["low confidence","no confidence","don't trust myself"],["Confidence often comes after action, not before it.","You only need enough courage for one small attempt."]],
+["body_insecurity",["hate my body","too fat","too thin","ugly"],["Your body is more than something to be judged.","You do not have to feel beautiful to treat yourself kindly."]],
+["comparison",["comparing myself","comparison","better than me"],["You often see their result and your whole journey.","Your pace does not have to match theirs."]],
+["perfectionism",["perfectionism","perfect","must be perfect"],["Perfect is often another form of delay.","Good enough can truly be enough."]],
+["procrastination",["procrastinating","procrastination","putting it off"],["Make it smaller, not more dramatic.","Five minutes still count."]],
+["motivation_low",["no motivation","unmotivated","lack motivation"],["Motivation is not always the beginning.","You do not need a huge drive today."]],
+["boredom",["bored","boredom"],["Boredom can be space, not only emptiness.","Maybe your mind needs something new, not more stimulation."]],
+["restlessness",["restless","can't sit still"],["Not every restlessness needs immediate action.","Your body can slow down before your thoughts do."]],
+["overstimulation",["overstimulated","too much input","too loud"],["Fewer inputs may help more than more solutions.","Make the world smaller for ten minutes."]],
+["irritability",["irritable","annoyed","snappy"],["Irritability is often tiredness with a sharper voice.","Maybe you need distance before you respond."]],
+["resentment",["resentment","holding a grudge"],["Resentment often holds you longer than the other person.","A boundary can help more than replaying the story."]],
+["betrayal",["betrayed","betrayal","cheated on"],["Betrayal changes trust, not your worth.","You can become more careful without becoming hard."]],
+["trust_issues",["trust issues","can't trust anyone","hard to trust"],["Trust is allowed to grow slowly.","Safety also grows from repeated behavior."]],
+["heartache",["heartache","my heart hurts","love hurts"],["Your heart is allowed to need time.","Pain is not automatically a sign to go back."]],
+["missing_someone",["I miss him","I miss her","I miss them","missing someone"],["Missing someone is not an instruction to return.","You can miss someone and still keep moving forward."]],
+["attachment",["can't let go","clingy","too attached"],["Letting go often starts before the feeling is ready.","Closeness should not pull you away from yourself."]],
+["unrequited_love",["unrequited love","he doesn't love me","she doesn't love me","they don't love me back"],["Unreturned love does not make your feelings wrong.","Your heart deserves reciprocity."]],
+["breakup_recovery",["getting over my ex","after breakup","breakup recovery"],["Healing is not linear.","A wave of memories is not a step backward."]],
+["relationship_doubt",["relationship doubts","do I still love him","do I still love her","do I still love them"],["Doubt is information, not an immediate decision.","Love alone does not answer every question."]]
+);
