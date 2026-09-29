@@ -329,6 +329,30 @@ function normalizeText(value){
   return value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");
 }
 
+
+function detectInputLanguageCore(text){
+  const n=normalizeText(text||"");
+  const en=["i am ","i'm ","im ","i feel ","my ","me ","can't ","cant ","don't ","dont ","frustrated","sad","angry","worried","happy","confused","nervous","lonely","jealous"];
+  const pt=["estou ","sinto ","me sinto ","nao ","não ","tenho ","meu ","minha ","muito ","muita ","triste","zangado","zangada","preocupado","preocupada","feliz","frustrado","frustrada"];
+  const de=["ich ","mir ","mich ","mein ","meine ","bin ","fühle ","fuehle ","nicht ","sehr ","traurig","wütend","wuetend","ängstlich","aengstlich","frustriert"];
+  const score=(arr)=>arr.reduce((s,x)=>s+(n.includes(normalizeText(x))?1:0),0);
+  const scores={en:score(en),pt:score(pt),de:score(de)};
+  const best=Object.entries(scores).sort((a,b)=>b[1]-a[1])[0];
+  return best[1]>0?best[0]:"de";
+}
+
+function findExternalEmotionCore(text,lang){
+  const n=normalizeText(text||"");
+  const pack=lang==="en"?(window.EMOTION_EN||[]):lang==="pt"?(window.EMOTION_PT||[]):[];
+  for(const item of pack){
+    const words=item[1]||[];
+    if(words.some(word=>n.includes(normalizeText(word)))){
+      return item[2]||null;
+    }
+  }
+  return null;
+}
+
 function detectTheme(text){
   const normalized=normalizeText(text);
 
@@ -538,8 +562,14 @@ async function cast(){
 
   await wait(1700);
   orb.classList.remove("casting");
-  const theme=detectTheme(text);
-  revealOrbLine(chooseLine(responses[theme]));
+  const lang=detectInputLanguageCore(text);
+  const externalLines=findExternalEmotionCore(text,lang);
+  if(externalLines){
+    revealOrbLine(chooseLine(externalLines));
+  }else{
+    const theme=detectTheme(text);
+    revealOrbLine(chooseLine(responses[theme]));
+  }
   busy=false;
   startHiddenReflection();
 }
