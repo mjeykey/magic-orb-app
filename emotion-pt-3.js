@@ -1,0 +1,22 @@
+window.EMOTION_PT=(window.EMOTION_PT||[]).concat([
+["conflict",["discussão","discussao","conflito","estamos sempre a discutir"],["Muitas vezes o conflito é sobre mais do que a última frase.","Podes fazer uma pausa antes de continuar a conversa."]],
+["boundaries",["limites","dizer não","dizer nao","não respeita o meu não","nao respeita o meu nao"],["Um limite não precisa de uma longa justificação.","Não é uma frase completa."]],
+["people_pleasing",["agradar a toda a gente","não consigo dizer não","nao consigo dizer nao"],["Não tens de agradar a toda a gente para continuares a ser digno de amor.","Um não honesto pode proteger um sim mais verdadeiro."]],
+["approval_seeking",["preciso de aprovação","preciso de aprovacao","preciso de validação","preciso de validacao"],["A validação de fora raramente dura muito tempo.","Não tens de ser compreendido por toda a gente."]],
+["feeling_unseen",["sinto-me invisível","sinto-me invisivel","ninguém me vê","ninguem me ve"],["Não ser visto não significa que não haja nada em ti para ver.","Talvez precises de outros olhos, não de outro valor."]],
+["feeling_unheard",["não me ouvem","nao me ouvem","ninguém me ouve","ninguem me ouve"],["Podes esperar ser ouvido.","Repetires-te não torna a tua verdade menos verdadeira."]],
+["rejection",["rejeitado","rejeitada","recusado","recusada"],["A rejeição dói, mas não é uma sentença final sobre ti.","Um não pode redirecionar-te sem diminuir-te."]],
+["failure",["falhei","fracassei","fracasso"],["Um resultado não é um veredito sobre toda a tua capacidade.","Podes recomeçar sem voltar ao zero."]],
+["mistake",["cometi um erro","fiz asneira","fiz mal"],["Um erro é informação.","Podes corrigir algo sem te condenares."]],
+["embarrassment",["passei vergonha","foi constrangedor","que vergonha"],["As outras pessoas costumam lembrar-se disso menos tempo do que tu.","Tinhas o direito de ser humano."]],
+["uncertainty",["incerto","incerta","incerteza","não tenho a certeza","nao tenho a certeza"],["A incerteza é desconfortável, não automaticamente perigosa.","Podes esperar até saberes mais."]],
+["change_fear",["medo da mudança","mudança assusta-me","mudanca assusta-me"],["A mudança pode assustar e ainda assim ser certa.","Um caminho novo raramente parece familiar ao início."]],
+["starting_over",["recomeçar","recomecar","começar de novo","comecar de novo"],["Recomeçar não torna inútil tudo o que veio antes.","Levas experiência contigo."]],
+["transition",["transição","transicao","entre fases","fase de mudança"],["As transições muitas vezes parecem mais confusas do que realmente são.","Ainda não tens de ter chegado."]],
+["career_stress",["stress no trabalho","stress profissional","carreira stress"],["O teu trabalho é uma parte da tua vida, não todo o teu valor.","Nem todo o problema profissional exige uma decisão final hoje."]],
+["job_search",["procura de emprego","procurar emprego","candidaturas","não encontro trabalho","nao encontro trabalho"],["Uma rejeição é um dado, não um veredito.","A função certa só precisa de um verdadeiro sim."]],
+["interview_nerves",["entrevista de emprego","nervos na entrevista","estou nervoso para a entrevista","estou nervosa para a entrevista"],["Os nervos podem existir ao lado da competência.","Não tens de responder perfeitamente, apenas com verdade e clareza."]],
+["work_overload",["demasiado trabalho","sobrecarga no trabalho","trabalho a mais"],["Nem tudo o que está na tua secretária pertence aos teus ombros hoje.","Priorizar também significa deixar algumas coisas por fazer."]],
+["boss_conflict",["problema com o chefe","chefe irrita-me","conflito com o chefe"],["Podes manter-te profissional e ainda ter limites.","Autoridade não significa ter sempre razão."]],
+["coworker_conflict",["colega irrita-me","problema com colega","conflito com colega"],["Nem toda a tensão tem de se tornar pessoal.","Palavras claras ajudam muitas vezes mais do que ressentimento silencioso."]]
+);
