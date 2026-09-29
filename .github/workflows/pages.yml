@@ -46,7 +46,7 @@ jobs:
           <script src="emotion-data-19.js"></script>
           <script src="emotion-de-final.js"></script>
           <script src="emotion-en-1.js"></script>
-          <script src="emotion-en-2.js"></script>
+          <script src="emotion-en-2.js?v=2"></script>
           <script src="emotion-en-3.js"></script>
           <script src="emotion-en-4.js"></script>
           <script src="emotion-en-5.js"></script>
