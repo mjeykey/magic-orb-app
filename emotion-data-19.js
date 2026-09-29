@@ -4,4 +4,4 @@ window.EXTRA_EMOTIONS=(window.EXTRA_EMOTIONS||[]).concat([
 ["presence",["im moment","präsent","praesent"],["Bleib bei diesem Moment.","Hier ist gerade genug."]],
 ["certainty",["sicher was ich will","weiß was ich will","weiss was ich will"],["Klarheit darf einfach klar sein.","Du musst deine Entscheidung nicht kleiner machen."]],
 ["momentum",["komme voran","fortschritt","momentum"],["Fortschritt darf sichtbar werden.","Mach mit dem nächsten kleinen Schritt weiter."]]
-);
+]);
