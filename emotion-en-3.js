@@ -19,4 +19,4 @@ window.EMOTION_EN=(window.EMOTION_EN||[]).concat([
 ["work_overload",["too much work","overloaded at work","workload"],["Not everything on your desk belongs on your shoulders today.","Prioritizing also means leaving some things undone."]],
 ["boss_conflict",["boss problem","my boss annoys me","conflict with boss"],["You can stay professional and still have boundaries.","Authority is not the same as always being right."]],
 ["coworker_conflict",["coworker annoys me","conflict with coworker","colleague problem"],["Not every tension has to become personal.","Clear words often help more than silent resentment."]]
-);
+]);
