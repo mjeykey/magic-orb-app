@@ -29,6 +29,8 @@ jobs:
         run: |
           mkdir -p _site
           rsync -a --exclude='.git' --exclude='_site' ./ _site/
+          mkdir -p _site/assets
+          cat audio-part-1.txt audio-part-2a.txt audio-part-2b.txt audio-part-3.txt audio-part-4.txt audio-part-5.txt | base64 -d > _site/assets/magic-ascend-reflection.mp3
           python - <<'PY'
           from pathlib import Path
           p=Path("_site/index.html")
