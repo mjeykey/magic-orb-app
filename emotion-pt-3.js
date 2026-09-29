@@ -19,4 +19,4 @@ window.EMOTION_PT=(window.EMOTION_PT||[]).concat([
 ["work_overload",["demasiado trabalho","sobrecarga no trabalho","trabalho a mais"],["Nem tudo o que está na tua secretária pertence aos teus ombros hoje.","Priorizar também significa deixar algumas coisas por fazer."]],
 ["boss_conflict",["problema com o chefe","chefe irrita-me","conflito com o chefe"],["Podes manter-te profissional e ainda ter limites.","Autoridade não significa ter sempre razão."]],
 ["coworker_conflict",["colega irrita-me","problema com colega","conflito com colega"],["Nem toda a tensão tem de se tornar pessoal.","Palavras claras ajudam muitas vezes mais do que ressentimento silencioso."]]
-);
+]);
