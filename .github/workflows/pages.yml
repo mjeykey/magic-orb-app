@@ -125,15 +125,15 @@ jobs:
             if(hit.lang==="en"){
               boxSecret.placeholder="Write your secret here …";
               sealButton.textContent="Give it to the universe";
-              hint.textContent="Enter your thought → tap the orb";
+              hint.textContent="";
             }else if(hit.lang==="pt"){
               boxSecret.placeholder="Escreve aqui o teu segredo …";
               sealButton.textContent="Entregar ao universo";
-              hint.textContent="Escreve o teu pensamento → toca na esfera";
+              hint.textContent="";
             }else{
               boxSecret.placeholder="Schreib dein Geheimnis hier hinein …";
               sealButton.textContent="Ans Universum übergeben";
-              hint.textContent="Gedanke eingeben → auf die Kugel tippen";
+              hint.textContent="";
             }
           },true);
 
