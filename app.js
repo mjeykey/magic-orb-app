@@ -112,15 +112,21 @@ function unlockBoxCloseSound(){
 
 function playBoxCloseSound(){
   try{
+    boxCloseSound.pause();
     boxCloseSound.currentTime = 0;
-    boxCloseSound.volume = 0.95;
+    boxCloseSound.volume = 1;
     const attempt = boxCloseSound.play();
     if(attempt && typeof attempt.catch === "function"){
-      attempt.catch(()=>playBoom());
+      attempt.catch(()=>{
+        setTimeout(()=>{
+          try{
+            boxCloseSound.currentTime = 0;
+            boxCloseSound.play().catch(()=>{});
+          }catch{}
+        },80);
+      });
     }
-  }catch{
-    playBoom();
-  }
+  }catch{}
 }
 
 let ritualTimers = [];
