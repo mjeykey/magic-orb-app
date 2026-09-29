@@ -1,0 +1,22 @@
+window.EMOTION_EN=(window.EMOTION_EN||[]).concat([
+["readiness",["ready","I am ready"],["Being ready does not have to feel perfect.","Maybe there is enough clarity now to begin."]],
+["renewal",["new beginning","renewal","fresh start"],["Something new is allowed to begin quietly.","You do not have to stay the same version of yourself."]],
+["peace",["peace","inner peace"],["You do not have to explain this peace.","Let it stay for a moment."]],
+["balance",["balanced","balance"],["Balance is not a fixed state.","You are allowed to readjust."]],
+["grounded",["grounded","centered"],["Stay with what is actually here.","Your next step is closer than your worries."]],
+["ease",["feels easy","ease","lightness"],["Ease can be a clue.","Not everything good has to feel hard."]],
+["warmth",["warm inside","warmth","warm heart"],["Hold this warm moment for a while.","Some things are allowed to simply feel good."]],
+["presence",["present","in the moment"],["Stay with this moment.","This is enough for now."]],
+["certainty",["I know what I want","certain","certainty"],["Clarity is allowed to remain simple.","You can trust your decision."]],
+["momentum",["making progress","moving forward","momentum"],["Progress is allowed to be visible.","Keep going with the next small step."]],
+["openness",["open to something","open minded","openness"],["Openness does not need urgency.","You can first see what comes."]],
+["rested",["rested","recharged","refreshed"],["Notice the new energy.","You can use it deliberately."]],
+["accomplished",["accomplished","I did it","achieved something"],["Take a moment for what you accomplished.","Progress deserves attention."]],
+["lighthearted",["lighthearted","carefree"],["Lightness is allowed to stay.","You do not have to fill it with worry."]],
+["curious_future",["curious about tomorrow","excited for tomorrow"],["You can be curious without planning everything.","Leave some room for surprise."]],
+["pride",["proud","proud of myself"],["Notice how far you have come.","You are allowed to be proud of yourself."]],
+["acceptance",["acceptance","I accept it"],["Acceptance does not mean approval.","It can mean you stop fighting what is already true."]],
+["enthusiasm",["enthusiastic","excited about this"],["Let the energy be real.","You do not have to tone down your excitement."]],
+["satisfaction",["satisfied with this","satisfied with myself"],["Notice what is already good enough.","You do not have to turn every good moment into the next goal."]],
+["amazement",["astonished","amazed","wow"],["Let yourself be surprised for a moment.","Not everything needs an immediate explanation."]]
+);
