@@ -19,4 +19,4 @@ window.EMOTION_PT=(window.EMOTION_PT||[]).concat([
 ["freedom",["livre","liberdade"],["A liberdade pode parecer estranha ao início.","Não precisas de voltar ao que te apertava só porque era familiar."]],
 ["independence",["independente","independência","independencia"],["Ser independente não significa carregar tudo sozinho.","Podes escolher o teu próprio caminho."]],
 ["contentment",["satisfeito","satisfeita","contente com isto"],["Nem todo o momento bom tem de crescer.","Estar satisfeito pode ser suficiente."]]
-);
+]);
