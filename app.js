@@ -351,6 +351,540 @@ const keywords = {
   ]
 };
 
+const questionResponses = {
+  "de": {
+    "yesno": [
+      "Eher ja — aber nur, wenn du dabei bei dir bleibst.",
+      "Eher nein. Nicht aus diesem Gefühl heraus.",
+      "Noch nicht. Lass etwas Ruhe dazwischen.",
+      "Ja, wenn es sich ruhig und nicht verzweifelt anfühlt.",
+      "Nein, wenn du dafür deine Grenze verlassen musst.",
+      "Die Kugel sagt: warte einen Moment länger.",
+      "Ein vorsichtiges Ja.",
+      "Ein sanftes Nein schützt dich gerade mehr.",
+      "Noch ist die Antwort nicht reif.",
+      "Ja — aber kleiner, als du gerade denkst.",
+      "Nein — nicht um etwas beweisen zu müssen.",
+      "Vielleicht. Prüfe zuerst, was du wirklich brauchst.",
+      "Die Richtung ist eher Ja als Nein.",
+      "Die Richtung ist eher Nein als Ja.",
+      "Heute noch nicht.",
+      "Wenn du morgen dasselbe fühlst, schau noch einmal hin.",
+      "Ja, solange du dich nicht dabei verlierst.",
+      "Nein, wenn nur Angst dich antreibt.",
+      "Die Antwort liegt zwischen Mut und Geduld.",
+      "Die Kugel bittet dich, nichts zu erzwingen.",
+      "Ein Ja braucht hier Ruhe.",
+      "Ein Nein darf ebenfalls Liebe zu dir selbst sein.",
+      "Frag noch einmal, wenn der innere Lärm leiser ist."
+    ],
+    "decision": [
+      "Wähle den Weg, auf dem du dich nicht selbst verlässt.",
+      "Die ruhigere Richtung verdient mehr Aufmerksamkeit.",
+      "Nimm nicht automatisch den Weg, der deine Angst am schnellsten beruhigt.",
+      "Wähle, was morgen noch zu dir passt.",
+      "Die bessere Richtung macht dich nicht kleiner.",
+      "Schau darauf, wo du freier atmen kannst.",
+      "Entscheide nicht aus Schuld.",
+      "Was du aus Würde wählst, trägt meist länger.",
+      "Die Kugel zeigt auf den Weg mit weniger innerem Kampf.",
+      "Wähle nicht nur das Bekannte, weil es bekannt ist.",
+      "Die richtige Richtung muss sich nicht spektakulär anfühlen.",
+      "Nimm die Option, bei der du dir selbst treu bleibst.",
+      "Wenn eine Wahl nur aus Angst besteht, gib ihr noch Zeit.",
+      "Der sanftere Weg ist nicht automatisch der schwächere.",
+      "Achte auf das, was dir Kraft zurückgibt.",
+      "Wähle nicht, um jemanden von deinem Wert zu überzeugen.",
+      "Die Antwort steckt eher in Frieden als in Druck.",
+      "Manchmal ist eine Pause selbst eine Entscheidung.",
+      "Du darfst die Wahl kleiner machen.",
+      "Nimm die Richtung, die deine Grenze respektiert.",
+      "Was du nicht erzwingen musst, verdient einen zweiten Blick.",
+      "Wähle nach dem, was real ist — nicht nach dem, was du hoffst.",
+      "Die Kugel sagt: erst Klarheit, dann Richtung."
+    ],
+    "comfort": [
+      "Ja, es wird wieder leichter.",
+      "Nicht sofort — aber dieser Zustand bleibt nicht für immer so.",
+      "Du musst nur diesen nächsten Moment schaffen.",
+      "Der Schmerz wird nicht immer so laut sein.",
+      "Heute darf Überleben klein aussehen.",
+      "Du musst gerade nicht alles verstehen.",
+      "Es reicht, wenn du den Tag in kleinen Stücken nimmst.",
+      "Du bist nicht verpflichtet, jetzt schon okay zu sein.",
+      "Das Schwere darf langsam leichter werden.",
+      "Ein ruhigerer Moment kommt wieder.",
+      "Du darfst dich heute einfach tragen lassen.",
+      "Auch lange Nächte enden.",
+      "Das Gefühl ist groß, aber nicht grenzenlos.",
+      "Du brauchst gerade keine perfekte Lösung.",
+      "Es darf weh tun, ohne dass es für immer weh tut.",
+      "Dein Herz darf Zeit brauchen.",
+      "Du musst nicht schneller heilen, als du kannst.",
+      "Heute reicht ein kleiner sicherer Schritt.",
+      "Es wird nicht alles auf einmal besser — aber etwas kann.",
+      "Du darfst müde sein und trotzdem weiterkommen.",
+      "Dieser Moment ist nicht deine ganze Zukunft.",
+      "Du wirst nicht für immer genau hier stehen.",
+      "Die Kugel sagt: halte nur den nächsten kleinen Abschnitt."
+    ],
+    "love": [
+      "Nicht jede Rückkehr wäre automatisch Heilung.",
+      "Achte weniger auf Worte und mehr auf Verhalten.",
+      "Wenn du schreiben willst, tu es nicht aus Panik.",
+      "Was echt ist, braucht nicht ständig Rätsel.",
+      "Sehnsucht ist nicht immer ein Zeichen für Rückkehr.",
+      "Die wichtigere Frage ist, ob diese Verbindung dir gut tut.",
+      "Liebe darf klarer sein als dieses Warten.",
+      "Du kannst jemanden lieben und trotzdem Abstand brauchen.",
+      "Vermissen bedeutet nicht automatisch, dass ihr zusammengehört.",
+      "Wenn nur du die Verbindung trägst, ist das auch eine Antwort.",
+      "Eine Rückkehr wäre nur wertvoll, wenn sich wirklich etwas verändert.",
+      "Du musst niemanden überzeugen, dich zu wählen.",
+      "Liebe sollte nicht dauerhaft deine Würde kosten.",
+      "Schau darauf, wie du dich nach dem Kontakt fühlst.",
+      "Manchmal fehlt dir die Hoffnung mehr als der Mensch.",
+      "Warte nicht nur auf Zeichen — achte auf Taten.",
+      "Du darfst lieben, ohne dich selbst aufzugeben.",
+      "Ein echtes Ja zu dir sollte nicht wie ständiges Rätselraten wirken.",
+      "Die Vergangenheit kann schön gewesen sein und trotzdem vorbei.",
+      "Wenn du schreibst, dann weil du etwas Echtes sagen willst — nicht um Angst zu beruhigen.",
+      "Nicht jede starke Verbindung ist eine gute Verbindung.",
+      "Dein Herz darf fühlen, während deine Grenze stehen bleibt.",
+      "Die Kugel fragt zurück: Würde dir die Antwort wirklich Frieden bringen?"
+    ],
+    "selfworth": [
+      "Ja. Du bist gut genug, auch bevor du es fühlst.",
+      "Du musst deinen Wert nicht erst beweisen.",
+      "Du kannst mehr, als dein Zweifel gerade zulässt.",
+      "Ein Fehler macht dich nicht zu einem Fehler.",
+      "Du darfst anfangen, bevor du dich bereit fühlst.",
+      "Unsicherheit ist kein Beweis gegen deine Fähigkeit.",
+      "Du bist nicht zu viel.",
+      "Du bist auch an schlechten Tagen nicht weniger wert.",
+      "Dein Tempo sagt nichts über deinen Wert.",
+      "Du darfst stolz auf kleine Fortschritte sein.",
+      "Du musst nicht perfekt sein, um liebenswert zu sein.",
+      "Dein innerer Kritiker ist nicht dein Lebenslauf.",
+      "Ja, du darfst dir das zutrauen.",
+      "Du reichst auch ohne Applaus.",
+      "Du musst nicht von allen verstanden werden.",
+      "Du bist mehr als dein letzter schlechter Moment.",
+      "Zweifel und Fähigkeit können gleichzeitig existieren.",
+      "Du darfst Raum einnehmen.",
+      "Dein Wert hängt nicht davon ab, ob jemand dich wählt.",
+      "Du musst nicht erst stärker werden, um Respekt zu verdienen.",
+      "Ja, du darfst an dich glauben, auch vorsichtig.",
+      "Du bist nicht verpflichtet, dich kleinzureden.",
+      "Die Kugel sagt: unterschätze dich heute nicht."
+    ],
+    "future": [
+      "Noch ist nicht alles sichtbar.",
+      "Die nächsten Schritte bringen mehr Klarheit als Grübeln.",
+      "Etwas bewegt sich, auch wenn du es noch nicht siehst.",
+      "Die Zukunft ist offener, als deine Angst behauptet.",
+      "Noch ist nichts endgültig.",
+      "Warte auf Fakten, bevor du eine Geschichte daraus machst.",
+      "Die Antwort kommt eher Schritt für Schritt als auf einmal.",
+      "Morgen kann anders aussehen als heute.",
+      "Ein Teil deiner Zukunft wird gerade erst gebaut.",
+      "Nicht jede Verzögerung ist ein Nein.",
+      "Manches braucht länger, ohne verloren zu sein.",
+      "Die Kugel sieht mehr Möglichkeiten als nur eine.",
+      "Lass die Zukunft noch ein bisschen Zukunft sein.",
+      "Was wirklich kommt, wird sich deutlicher zeigen.",
+      "Du musst nicht heute wissen, wie alles endet.",
+      "Ein neuer Weg kann entstehen, den du noch nicht eingeplant hast.",
+      "Die nächsten Tage können Informationen bringen, die heute fehlen.",
+      "Ungewissheit ist noch kein schlechtes Ergebnis.",
+      "Noch ist Raum für Veränderung.",
+      "Die Zukunft gehört nicht deinem schlimmsten Szenario.",
+      "Etwas kann sich zu deinen Gunsten verschieben, ohne dass du es erzwingst.",
+      "Der nächste Hinweis ist wichtiger als die endgültige Vorhersage.",
+      "Die Kugel sagt: noch offen."
+    ],
+    "general": [
+      "Die Antwort liegt näher, als du denkst.",
+      "Frag dich, was dich ruhiger statt nur kurzfristig erleichtert.",
+      "Nicht jede Frage braucht heute eine endgültige Antwort.",
+      "Die Kugel zeigt auf den nächsten kleinen ehrlichen Schritt.",
+      "Was wahr ist, hält auch einen ruhigen Blick aus.",
+      "Vielleicht kennst du bereits einen Teil der Antwort.",
+      "Schau auf das, was tatsächlich passiert — nicht nur auf das, was du befürchtest.",
+      "Die klarste Antwort ist nicht immer die lauteste.",
+      "Manchmal ist Abwarten eine Form von Klarheit.",
+      "Dein erster Impuls ist Information, aber noch kein Befehl.",
+      "Lass Gefühl und Fakten nebeneinander stehen.",
+      "Die Antwort darf sich verändern, wenn du mehr weißt.",
+      "Du musst nichts erzwingen, um voranzukommen.",
+      "Ein kleiner Schritt kann mehr sagen als hundert Gedanken.",
+      "Was würde dir morgen noch richtig erscheinen?",
+      "Die Kugel sagt: mach die Frage kleiner.",
+      "Achte auf das Muster, nicht nur auf den Moment.",
+      "Es gibt mehr als eine mögliche gute Antwort.",
+      "Vielleicht brauchst du gerade Orientierung statt Gewissheit.",
+      "Was schützt deinen Frieden, ohne dich zu verstecken?",
+      "Du darfst dir selbst Zeit geben.",
+      "Nicht jede Unsicherheit verlangt eine sofortige Entscheidung.",
+      "Die Kugel antwortet: bleib neugierig, noch nicht endgültig."
+    ]
+  },
+  "en": {
+    "yesno": [
+      "Leaning yes — but only if you stay true to yourself.",
+      "Leaning no. Not from this emotional place.",
+      "Not yet. Put a little calm between you and the choice.",
+      "Yes, if it feels calm rather than desperate.",
+      "No, if it requires abandoning your boundary.",
+      "The orb says: wait a little longer.",
+      "A careful yes.",
+      "A gentle no may protect you more right now.",
+      "The answer is not ready yet.",
+      "Yes — but smaller than you are imagining.",
+      "No — not just to prove something.",
+      "Maybe. First check what you actually need.",
+      "The direction leans more yes than no.",
+      "The direction leans more no than yes.",
+      "Not today.",
+      "If you still feel the same tomorrow, look again.",
+      "Yes, as long as you do not lose yourself in it.",
+      "No, if fear is the only thing pushing you.",
+      "The answer sits somewhere between courage and patience.",
+      "The orb asks you not to force it.",
+      "A yes here needs calm.",
+      "A no can also be an act of self-respect.",
+      "Ask again when the inner noise is quieter."
+    ],
+    "decision": [
+      "Choose the path where you do not abandon yourself.",
+      "The quieter direction deserves more attention.",
+      "Do not automatically choose what calms your fear fastest.",
+      "Choose what will still fit you tomorrow.",
+      "The better direction does not make you smaller.",
+      "Notice where you can breathe more freely.",
+      "Do not decide from guilt.",
+      "What you choose from dignity usually carries farther.",
+      "The orb points toward the path with less inner fighting.",
+      "Do not choose the familiar only because it is familiar.",
+      "The right direction does not need to feel dramatic.",
+      "Take the option where you remain true to yourself.",
+      "If a choice is made only of fear, give it more time.",
+      "The gentler road is not automatically the weaker one.",
+      "Notice what gives energy back to you.",
+      "Do not choose just to prove your worth to someone.",
+      "The answer lives closer to peace than pressure.",
+      "Sometimes a pause is a decision too.",
+      "You are allowed to make the choice smaller.",
+      "Take the direction that respects your boundaries.",
+      "What you do not have to force deserves another look.",
+      "Choose from what is real, not only from what you hope.",
+      "The orb says: clarity first, direction second."
+    ],
+    "comfort": [
+      "Yes, it will become lighter again.",
+      "Not instantly — but this will not feel exactly like this forever.",
+      "You only have to make it through the next moment.",
+      "The pain will not always be this loud.",
+      "Getting through today can be very small.",
+      "You do not have to understand everything right now.",
+      "Take the day in small pieces.",
+      "You are not required to be okay already.",
+      "What feels heavy can slowly become lighter.",
+      "A calmer moment will come again.",
+      "You are allowed to let yourself be carried today.",
+      "Even long nights end.",
+      "The feeling is huge, but it is not endless.",
+      "You do not need a perfect solution right now.",
+      "It can hurt without hurting forever.",
+      "Your heart is allowed to need time.",
+      "You do not have to heal faster than you can.",
+      "One small safe step is enough today.",
+      "Everything may not improve at once — but something can.",
+      "You can be tired and still be moving forward.",
+      "This moment is not your whole future.",
+      "You will not stand exactly here forever.",
+      "The orb says: carry only the next small stretch."
+    ],
+    "love": [
+      "Not every return would automatically mean healing.",
+      "Watch behavior more closely than words.",
+      "If you message them, do not do it from panic.",
+      "What is real should not require endless guessing.",
+      "Missing someone is not always a sign to return.",
+      "The more important question is whether this connection is good for you.",
+      "Love is allowed to be clearer than this waiting.",
+      "You can love someone and still need distance.",
+      "Missing them does not automatically mean you belong together.",
+      "If only you are carrying the connection, that is information too.",
+      "A return only matters if something has genuinely changed.",
+      "You do not have to convince anyone to choose you.",
+      "Love should not continually cost you your dignity.",
+      "Notice how you feel after contact.",
+      "Sometimes you miss the hope more than the person.",
+      "Do not wait only for signs — watch actions.",
+      "You can love without abandoning yourself.",
+      "A real yes to you should not feel like endless decoding.",
+      "The past can have been beautiful and still be over.",
+      "If you write, write because you have something real to say — not just to quiet fear.",
+      "Not every intense connection is a healthy connection.",
+      "Your heart can feel while your boundary remains standing.",
+      "The orb asks back: would the answer actually bring you peace?"
+    ],
+    "selfworth": [
+      "Yes. You are enough even before you feel it.",
+      "You do not have to prove your worth first.",
+      "You can do more than your doubt currently allows you to see.",
+      "A mistake does not make you a mistake.",
+      "You may begin before you feel ready.",
+      "Uncertainty is not evidence of inability.",
+      "You are not too much.",
+      "You are not worth less on a bad day.",
+      "Your pace says nothing about your worth.",
+      "You may be proud of small progress.",
+      "You do not have to be perfect to be lovable.",
+      "Your inner critic is not your résumé.",
+      "Yes, you are allowed to trust yourself.",
+      "You are enough without applause.",
+      "You do not have to be understood by everyone.",
+      "You are more than your last bad moment.",
+      "Doubt and ability can exist at the same time.",
+      "You are allowed to take up space.",
+      "Your worth does not depend on whether someone chooses you.",
+      "You do not need to become stronger before you deserve respect.",
+      "Yes, you may believe in yourself, even cautiously.",
+      "You are not required to make yourself smaller.",
+      "The orb says: do not underestimate yourself today."
+    ],
+    "future": [
+      "Not everything is visible yet.",
+      "The next steps will bring more clarity than overthinking.",
+      "Something is moving even if you cannot see it yet.",
+      "The future is more open than your fear says.",
+      "Nothing is final yet.",
+      "Wait for facts before turning uncertainty into a story.",
+      "The answer will arrive step by step, not all at once.",
+      "Tomorrow can look different from today.",
+      "Part of your future is still being built.",
+      "Not every delay is a no.",
+      "Some things take longer without being lost.",
+      "The orb sees more than one possible path.",
+      "Let the future remain the future for a little longer.",
+      "What is truly coming will become clearer.",
+      "You do not need to know today how everything ends.",
+      "A new path may appear that you have not planned for.",
+      "The next few days may bring information you do not have yet.",
+      "Uncertainty is not the same as a bad outcome.",
+      "There is still room for change.",
+      "Your future does not belong to your worst-case scenario.",
+      "Something may shift in your favor without being forced.",
+      "The next clue matters more than a final prediction.",
+      "The orb says: still open."
+    ],
+    "general": [
+      "The answer may be closer than you think.",
+      "Ask what makes you calmer, not only what gives quick relief.",
+      "Not every question needs a final answer today.",
+      "The orb points to the next small honest step.",
+      "What is true can survive a calm look.",
+      "You may already know part of the answer.",
+      "Look at what is actually happening, not only what you fear.",
+      "The clearest answer is not always the loudest.",
+      "Sometimes waiting is a form of clarity.",
+      "Your first impulse is information, not an order.",
+      "Let feelings and facts stand beside each other.",
+      "The answer may change when you know more.",
+      "You do not have to force anything to move forward.",
+      "One small step can say more than a hundred thoughts.",
+      "What would still feel right tomorrow?",
+      "The orb says: make the question smaller.",
+      "Watch the pattern, not only the moment.",
+      "There can be more than one good answer.",
+      "Maybe what you need is direction rather than certainty.",
+      "What protects your peace without making you hide?",
+      "You are allowed to give yourself time.",
+      "Not every uncertainty requires an immediate decision.",
+      "The orb answers: stay curious, not final."
+    ]
+  },
+  "pt": {
+    "yesno": [
+      "Tende para sim — mas só se continuares fiel a ti.",
+      "Tende para não. Não a partir deste estado emocional.",
+      "Ainda não. Deixa entrar um pouco de calma.",
+      "Sim, se vier de tranquilidade e não de desespero.",
+      "Não, se para isso tiveres de abandonar os teus limites.",
+      "A esfera diz: espera mais um pouco.",
+      "Um sim cuidadoso.",
+      "Um não suave pode proteger-te mais agora.",
+      "A resposta ainda não está madura.",
+      "Sim — mas de forma menor do que estás a imaginar.",
+      "Não — não apenas para provar alguma coisa.",
+      "Talvez. Primeiro percebe do que realmente precisas.",
+      "A direção inclina-se mais para sim do que para não.",
+      "A direção inclina-se mais para não do que para sim.",
+      "Hoje, ainda não.",
+      "Se amanhã sentires o mesmo, olha de novo.",
+      "Sim, desde que não te percas nisso.",
+      "Não, se for apenas o medo a empurrar-te.",
+      "A resposta está entre coragem e paciência.",
+      "A esfera pede-te para não forçares nada.",
+      "Um sim aqui precisa de calma.",
+      "Um não também pode ser respeito por ti.",
+      "Pergunta outra vez quando o ruído interior estiver mais baixo."
+    ],
+    "decision": [
+      "Escolhe o caminho em que não te abandonas.",
+      "A direção mais tranquila merece mais atenção.",
+      "Não escolhas automaticamente o que acalma o medo mais depressa.",
+      "Escolhe o que ainda fizer sentido amanhã.",
+      "A melhor direção não te faz menor.",
+      "Repara onde consegues respirar com mais liberdade.",
+      "Não decidas por culpa.",
+      "O que escolhes com dignidade costuma durar mais.",
+      "A esfera aponta para o caminho com menos luta interior.",
+      "Não escolhas o conhecido só por ser conhecido.",
+      "A direção certa não precisa de parecer dramática.",
+      "Escolhe a opção em que continuas fiel a ti.",
+      "Se uma escolha nasce apenas do medo, dá-lhe mais tempo.",
+      "O caminho mais suave não é automaticamente o mais fraco.",
+      "Repara no que te devolve energia.",
+      "Não escolhas para provar o teu valor a alguém.",
+      "A resposta está mais perto da paz do que da pressão.",
+      "Às vezes, fazer uma pausa também é uma decisão.",
+      "Podes tornar a decisão mais pequena.",
+      "Segue a direção que respeita os teus limites.",
+      "O que não precisa de ser forçado merece outro olhar.",
+      "Escolhe com base no que é real, não só no que esperas.",
+      "A esfera diz: primeiro clareza, depois direção."
+    ],
+    "comfort": [
+      "Sim, vai ficar mais leve outra vez.",
+      "Não imediatamente — mas isto não vai sentir-se assim para sempre.",
+      "Só precisas de atravessar o próximo momento.",
+      "A dor não vai falar sempre tão alto.",
+      "Hoje, sobreviver pode ser algo muito pequeno.",
+      "Não precisas de compreender tudo agora.",
+      "Leva o dia em pedaços pequenos.",
+      "Não tens de estar bem já.",
+      "O que pesa pode tornar-se mais leve aos poucos.",
+      "Um momento mais calmo vai voltar.",
+      "Hoje podes deixar-te amparar.",
+      "Até as noites longas acabam.",
+      "O sentimento é enorme, mas não é infinito.",
+      "Não precisas de uma solução perfeita agora.",
+      "Pode doer sem doer para sempre.",
+      "O teu coração pode precisar de tempo.",
+      "Não tens de curar mais depressa do que consegues.",
+      "Hoje basta um pequeno passo seguro.",
+      "Nem tudo melhora de uma vez — mas alguma coisa pode melhorar.",
+      "Podes estar cansada e continuar a avançar.",
+      "Este momento não é todo o teu futuro.",
+      "Não vais ficar exatamente aqui para sempre.",
+      "A esfera diz: carrega apenas o próximo pequeno trecho."
+    ],
+    "love": [
+      "Nem todo o regresso significaria cura.",
+      "Olha mais para o comportamento do que para as palavras.",
+      "Se fores escrever, não escrevas a partir do pânico.",
+      "O que é real não devia exigir adivinhação constante.",
+      "Ter saudades não é sempre um sinal para voltar.",
+      "A pergunta mais importante é se esta ligação te faz bem.",
+      "O amor pode ser mais claro do que esta espera.",
+      "Podes amar alguém e ainda assim precisar de distância.",
+      "Ter saudades não significa automaticamente que devem ficar juntos.",
+      "Se só tu sustentas a ligação, isso também é informação.",
+      "Um regresso só importa se alguma coisa tiver realmente mudado.",
+      "Não tens de convencer ninguém a escolher-te.",
+      "O amor não devia custar-te constantemente a tua dignidade.",
+      "Repara em como te sentes depois do contacto.",
+      "Às vezes tens mais saudades da esperança do que da pessoa.",
+      "Não esperes apenas por sinais — observa ações.",
+      "Podes amar sem te abandonar.",
+      "Um verdadeiro sim a ti não devia parecer uma decifração interminável.",
+      "O passado pode ter sido bonito e ainda assim ter acabado.",
+      "Se escreveres, escreve porque tens algo verdadeiro para dizer — não apenas para acalmar o medo.",
+      "Nem toda ligação intensa é uma ligação saudável.",
+      "O teu coração pode sentir enquanto o teu limite continua de pé.",
+      "A esfera pergunta de volta: a resposta traria mesmo paz?"
+    ],
+    "selfworth": [
+      "Sim. És suficiente mesmo antes de o sentires.",
+      "Não tens de provar primeiro o teu valor.",
+      "Consegues mais do que a tua dúvida te deixa ver agora.",
+      "Um erro não faz de ti um erro.",
+      "Podes começar antes de te sentires pronta.",
+      "Insegurança não é prova de incapacidade.",
+      "Não és demais.",
+      "Num dia mau não vales menos.",
+      "O teu ritmo não diz nada sobre o teu valor.",
+      "Podes ter orgulho em pequenos progressos.",
+      "Não precisas de ser perfeita para merecer amor.",
+      "A tua voz crítica não é o teu currículo.",
+      "Sim, podes confiar em ti.",
+      "És suficiente mesmo sem aplausos.",
+      "Não precisas de ser compreendida por toda a gente.",
+      "És mais do que o teu último momento difícil.",
+      "Dúvida e capacidade podem existir ao mesmo tempo.",
+      "Podes ocupar espaço.",
+      "O teu valor não depende de alguém te escolher.",
+      "Não precisas de ficar mais forte para merecer respeito.",
+      "Sim, podes acreditar em ti, mesmo com cautela.",
+      "Não tens de te diminuir.",
+      "A esfera diz: hoje não te subestimes."
+    ],
+    "future": [
+      "Ainda não está tudo visível.",
+      "Os próximos passos vão trazer mais clareza do que pensar sem parar.",
+      "Alguma coisa está a mover-se, mesmo que ainda não consigas vê-la.",
+      "O futuro está mais aberto do que o teu medo diz.",
+      "Ainda nada é definitivo.",
+      "Espera pelos factos antes de transformar incerteza numa história.",
+      "A resposta vai chegar passo a passo, não toda de uma vez.",
+      "Amanhã pode parecer diferente de hoje.",
+      "Uma parte do teu futuro ainda está a ser construída.",
+      "Nem todo atraso é um não.",
+      "Algumas coisas demoram mais sem estarem perdidas.",
+      "A esfera vê mais do que um caminho possível.",
+      "Deixa o futuro continuar a ser futuro por mais um pouco.",
+      "O que realmente vem vai tornar-se mais claro.",
+      "Não precisas de saber hoje como tudo termina.",
+      "Pode aparecer um caminho novo que ainda não planeaste.",
+      "Os próximos dias podem trazer informação que hoje ainda não tens.",
+      "Incerteza não é o mesmo que um mau resultado.",
+      "Ainda há espaço para mudança.",
+      "O teu futuro não pertence ao pior cenário da tua cabeça.",
+      "Algo pode mudar a teu favor sem teres de forçar.",
+      "A próxima pista importa mais do que uma previsão final.",
+      "A esfera diz: ainda está em aberto."
+    ],
+    "general": [
+      "A resposta pode estar mais perto do que pensas.",
+      "Pergunta o que te traz calma, não apenas alívio rápido.",
+      "Nem toda pergunta precisa de resposta definitiva hoje.",
+      "A esfera aponta para o próximo pequeno passo honesto.",
+      "O que é verdadeiro aguenta um olhar tranquilo.",
+      "Talvez já conheças uma parte da resposta.",
+      "Olha para o que realmente está a acontecer, não apenas para o que temes.",
+      "A resposta mais clara nem sempre é a mais barulhenta.",
+      "Às vezes esperar também é uma forma de clareza.",
+      "O primeiro impulso é informação, não uma ordem.",
+      "Deixa sentimento e factos existirem lado a lado.",
+      "A resposta pode mudar quando souberes mais.",
+      "Não precisas de forçar nada para avançar.",
+      "Um pequeno passo pode dizer mais do que cem pensamentos.",
+      "O que ainda te pareceria certo amanhã?",
+      "A esfera diz: torna a pergunta mais pequena.",
+      "Observa o padrão, não apenas o momento.",
+      "Pode haver mais do que uma boa resposta.",
+      "Talvez precises de direção, não de certeza.",
+      "O que protege a tua paz sem te esconder?",
+      "Podes dar tempo a ti própria.",
+      "Nem toda incerteza exige uma decisão imediata.",
+      "A esfera responde: mantém a curiosidade, não a certeza."
+    ]
+  }
+};
+
 let busy = false;
 
 function normalizeText(value){
@@ -393,6 +927,97 @@ function detectTheme(text){
   }
 
   return "general";
+}
+
+
+function isHighRiskQuestion(text){
+  const n=normalizeText(text||"");
+  const terms=[
+    "suizid","selbstmord","mich umbringen","mir etwas antun","mir was antun","nicht mehr leben",
+    "suicide","kill myself","hurt myself","self harm","self-harm","don't want to live","dont want to live",
+    "suicidio","suicídio","matar-me","me matar","fazer mal a mim","nao quero viver","não quero viver"
+  ];
+  return terms.some(term=>n.includes(normalizeText(term)));
+}
+
+function isQuestion(text){
+  const t=(text||"").trim();
+  const n=normalizeText(t);
+  if(!t) return false;
+  if(t.includes("?")) return true;
+
+  const starters=[
+    "soll ","sollte ","kann ","könnte ","koennte ","darf ","muss ","bin ","ist ","war ","wird ","kommt ",
+    "wie ","was ","warum ","wann ","wer ","wo ","welche ","welcher ","welches ",
+    "should ","can ","could ","may ","must ","am ","is ","are ","was ","will ","would ","does ","do ",
+    "how ","what ","why ","when ","who ","where ","which ",
+    "devo ","posso ","será ","sera ","vai ","vou ","é ","e ","como ","o que ","porque ","por que ","quando ","quem ","onde ","qual "
+  ];
+  return starters.some(start=>n.startsWith(normalizeText(start)));
+}
+
+function detectQuestionType(text,lang){
+  if(!isQuestion(text)||isHighRiskQuestion(text)) return null;
+  const n=normalizeText(text);
+
+  const hasAny=(terms)=>terms.some(term=>n.includes(normalizeText(term)));
+
+  const decisionTerms=lang==="en"
+    ?[" or ","which should i","which one","choose between"]
+    :lang==="pt"
+      ?[" ou ","qual devo","qual escolher","escolher entre"]
+      :[" oder ","welches soll","welche soll","was soll ich wählen","was soll ich waehlen","entscheiden zwischen"];
+  if(hasAny(decisionTerms)) return "decision";
+
+  const comfortTerms=lang==="en"
+    ?["will it get better","how do i get through","how can i cope","how do i survive","will this pass","how do i handle this"]
+    :lang==="pt"
+      ?["vai melhorar","como aguento","como vou aguentar","como superar","isto vai passar","isso vai passar","como lidar"]
+      :["wird es besser","wie halte ich das aus","wie überstehe ich","wie ueberstehe ich","geht das vorbei","wie komme ich da durch","wie soll ich das schaffen"];
+  if(hasAny(comfortTerms)) return "comfort";
+
+  const loveTerms=lang==="en"
+    ?["should i text him","should i text her","should i message him","should i message her","will he come back","will she come back","does he miss me","does she miss me","does he love me","does she love me","was it love","was it real","are we meant"]
+    :lang==="pt"
+      ?["devo escrever para ele","devo escrever para ela","devo mandar mensagem","ele vai voltar","ela vai voltar","ele sente a minha falta","ela sente a minha falta","ele me ama","ela me ama","foi amor","era amor","foi real"]
+      :["soll ich ihm schreiben","soll ich ihr schreiben","soll ich ihm texten","soll ich ihr texten","kommt er zurück","kommt er zurueck","kommt sie zurück","kommt sie zurueck","vermisst er mich","vermisst sie mich","liebt er mich","liebt sie mich","war das liebe","war es liebe","war das echt","gehören wir zusammen","gehoeren wir zusammen"];
+  if(hasAny(loveTerms)) return "love";
+
+  const selfworthTerms=lang==="en"
+    ?["am i good enough","am i enough","can i do this","will i manage","am i too much","do i deserve","am i capable"]
+    :lang==="pt"
+      ?["sou suficiente","sou boa o suficiente","sou bom o suficiente","consigo fazer isto","vou conseguir","sou demais","mereço","mereco","sou capaz"]
+      :["bin ich gut genug","reiche ich","schaffe ich das","kann ich das","bin ich zu viel","verdiene ich","bin ich fähig","bin ich faehig"];
+  if(hasAny(selfworthTerms)) return "selfworth";
+
+  const futureTerms=lang==="en"
+    ?["will ","when will","future","tomorrow","soon","what happens next","is it going to"]
+    :lang==="pt"
+      ?["vai ","quando vai","futuro","amanhã","amanha","em breve","o que acontece depois","será que","sera que"]
+      :["wird ","wann wird","zukunft","morgen","bald","was passiert als nächstes","was passiert als naechstes","kommt ","werde ich"];
+  if(hasAny(futureTerms)) return "future";
+
+  const yesNoTerms=lang==="en"
+    ?["should i","can i","could i","may i","must i","is it","are we","does ","do i","would it"]
+    :lang==="pt"
+      ?["devo ","posso ","tenho de","é ","e ","será ","sera ","vale a pena"]
+      :["soll ich","sollte ich","kann ich","könnte ich","koennte ich","darf ich","muss ich","ist es","sind wir","würde ","wuerde "];
+  if(hasAny(yesNoTerms)) return "yesno";
+
+  return "general";
+}
+
+function chooseQuestionAnswer(text,lang){
+  const type=detectQuestionType(text,lang);
+  if(!type) return null;
+  const pack=questionResponses[lang]||questionResponses.de;
+  return chooseLine(pack[type]||pack.general);
+}
+
+function highRiskReply(lang){
+  if(lang==="en") return "This is too important for a random oracle answer. Please stay with another person and reach out for immediate human help now.";
+  if(lang==="pt") return "Isto é demasiado importante para uma resposta aleatória da esfera. Fica com outra pessoa e procura ajuda humana imediata agora.";
+  return "Das ist zu wichtig für eine zufällige Orakel-Antwort. Bleib jetzt bei einem anderen Menschen und hol dir unmittelbar menschliche Hilfe.";
 }
 
 function chooseLine(lines){
@@ -593,12 +1218,21 @@ async function cast(){
   await wait(1700);
   orb.classList.remove("casting");
   const lang=detectInputLanguageCore(text);
-  const externalLines=findExternalEmotionCore(text,lang);
-  if(externalLines){
-    revealOrbLine(chooseLine(externalLines));
+  if(isHighRiskQuestion(text)){
+    revealOrbLine(highRiskReply(lang));
   }else{
-    const theme=detectTheme(text);
-    revealOrbLine(chooseLine(responses[theme]));
+    const questionLine=chooseQuestionAnswer(text,lang);
+    if(questionLine){
+      revealOrbLine(questionLine);
+    }else{
+      const externalLines=findExternalEmotionCore(text,lang);
+      if(externalLines){
+        revealOrbLine(chooseLine(externalLines));
+      }else{
+        const theme=detectTheme(text);
+        revealOrbLine(chooseLine(responses[theme]));
+      }
+    }
   }
   busy=false;
   startHiddenReflection();
