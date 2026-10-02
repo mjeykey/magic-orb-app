@@ -956,6 +956,84 @@ function isQuestion(text){
   return starters.some(start=>n.startsWith(normalizeText(start)));
 }
 
+const findingLoveResponses={
+  "de": [
+    "Liebe findest du eher dort, wo du dich nicht verbiegen musst.",
+    "Zeig dich dort, wo dein echtes Ich Platz hat.",
+    "Liebe beginnt oft nicht mit Suchen, sondern mit echter Begegnung.",
+    "Geh dorthin, wo du lebendig wirst — dort kann dich jemand wirklich sehen.",
+    "Die richtige Nähe fühlt sich nicht wie eine Bewerbung an.",
+    "Suche weniger nach Perfektion und mehr nach echter Resonanz.",
+    "Liebe wächst leichter, wenn du nicht versuchst, jemand anderes zu sein.",
+    "Öffne Türen zu Menschen, nicht nur zu Vorstellungen.",
+    "Manchmal beginnt Liebe mit einem ganz unspektakulären Gespräch.",
+    "Wähle Orte und Menschen, bei denen du dich freier statt kleiner fühlst.",
+    "Die Kugel sagt: werde sichtbar, nicht verfügbar um jeden Preis.",
+    "Liebe findet eher Anschluss an ein echtes Leben als an eine perfekte Suche.",
+    "Lass Neugier größer sein als die Angst vor Enttäuschung.",
+    "Gib Begegnungen Zeit, bevor du sie zu Schicksal erklärst.",
+    "Achte auf Menschen, bei denen Ruhe neben Anziehung existieren kann.",
+    "Du musst Liebe nicht jagen — aber du darfst ihr Gelegenheiten geben.",
+    "Sag öfter Ja zu echten Begegnungen und seltener Ja aus Einsamkeit.",
+    "Liebe braucht Nähe, aber auch Grenzen.",
+    "Vielleicht findest du sie dort, wo du gar nicht beeindrucken musst.",
+    "Suche nach Gegenseitigkeit, nicht nach Rätseln.",
+    "Ein guter Anfang fühlt sich oft einfacher an, als Fantasie es erwartet.",
+    "Bleib offen für Menschen, die nicht deinem alten Muster entsprechen.",
+    "Die Kugel sagt: baue ein Leben, in das Liebe gerne eintreten würde."
+  ],
+  "en": [
+    "You are more likely to find love where you do not have to shrink yourself.",
+    "Show up where your real self has room to be seen.",
+    "Love often begins with a real encounter, not a perfect search.",
+    "Go where you feel alive — that is where someone can truly notice you.",
+    "The right closeness should not feel like a job interview.",
+    "Look less for perfection and more for genuine resonance.",
+    "Love grows more easily when you are not pretending to be someone else.",
+    "Open doors to people, not only to fantasies.",
+    "Sometimes love starts with a completely ordinary conversation.",
+    "Choose places and people where you feel freer, not smaller.",
+    "The orb says: become visible, not available at any cost.",
+    "Love connects more easily to a real life than to a perfect search.",
+    "Let curiosity become bigger than the fear of disappointment.",
+    "Give encounters time before calling them destiny.",
+    "Notice people where calm can exist beside attraction.",
+    "You do not have to chase love — but you can give it opportunities.",
+    "Say yes more often to real connection and less often from loneliness.",
+    "Love needs closeness, but it also needs boundaries.",
+    "Maybe you will find it where you do not have to impress anyone.",
+    "Look for reciprocity, not riddles.",
+    "A good beginning often feels simpler than fantasy expects.",
+    "Stay open to people who do not fit your old pattern.",
+    "The orb says: build a life that love would be glad to enter."
+  ],
+  "pt": [
+    "É mais provável encontrares amor onde não precisas de te diminuir.",
+    "Mostra-te onde o teu verdadeiro eu pode ser visto.",
+    "O amor muitas vezes começa num encontro real, não numa busca perfeita.",
+    "Vai onde te sentes viva — é aí que alguém pode realmente ver-te.",
+    "A proximidade certa não devia parecer uma entrevista de emprego.",
+    "Procura menos perfeição e mais sintonia verdadeira.",
+    "O amor cresce melhor quando não tentas ser outra pessoa.",
+    "Abre portas a pessoas, não apenas a fantasias.",
+    "Às vezes o amor começa numa conversa completamente normal.",
+    "Escolhe lugares e pessoas onde te sentes mais livre, não menor.",
+    "A esfera diz: torna-te visível, não disponível a qualquer preço.",
+    "O amor liga-se mais facilmente a uma vida real do que a uma procura perfeita.",
+    "Deixa a curiosidade ficar maior do que o medo da desilusão.",
+    "Dá tempo aos encontros antes de lhes chamares destino.",
+    "Repara nas pessoas com quem a calma pode existir ao lado da atração.",
+    "Não precisas de perseguir o amor — mas podes criar oportunidades para ele.",
+    "Diz mais vezes sim a encontros reais e menos vezes sim por solidão.",
+    "O amor precisa de proximidade, mas também de limites.",
+    "Talvez o encontres onde não precisas de impressionar ninguém.",
+    "Procura reciprocidade, não enigmas.",
+    "Um bom começo muitas vezes parece mais simples do que a fantasia espera.",
+    "Mantém-te aberta a pessoas que não repetem o teu padrão antigo.",
+    "A esfera diz: constrói uma vida onde o amor goste de entrar."
+  ]
+};
+
 function detectQuestionType(text,lang){
   if(!isQuestion(text)||isHighRiskQuestion(text)) return null;
   const n=normalizeText(text);
@@ -975,6 +1053,13 @@ function detectQuestionType(text,lang){
       ?["vai melhorar","como aguento","como vou aguentar","como superar","isto vai passar","isso vai passar","como lidar"]
       :["wird es besser","wie halte ich das aus","wie überstehe ich","wie ueberstehe ich","geht das vorbei","wie komme ich da durch","wie soll ich das schaffen"];
   if(hasAny(comfortTerms)) return "comfort";
+
+  const findingLoveTerms=lang==="en"
+    ?["how do i find love","how can i find love","where do i find love","will i find love","when will i find love","how do i find a partner","how do i meet someone","where can i meet someone"]
+    :lang==="pt"
+      ?["como encontro o amor","como encontrar o amor","onde encontro o amor","vou encontrar o amor","quando vou encontrar o amor","como encontrar alguém","como encontrar alguem","como conhecer alguém","como conhecer alguem"]
+      :["wie finde ich liebe","wo finde ich liebe","wie kann ich liebe finden","werde ich liebe finden","wann finde ich liebe","finde ich liebe","wie finde ich einen partner","wie finde ich eine partnerin","wie finde ich jemanden","wann finde ich jemanden"];
+  if(hasAny(findingLoveTerms)) return "findinglove";
 
   const loveTerms=lang==="en"
     ?["should i text him","should i text her","should i message him","should i message her","will he come back","will she come back","does he miss me","does she miss me","does he love me","does she love me","was it love","was it real","are we meant"]
@@ -1010,6 +1095,10 @@ function detectQuestionType(text,lang){
 function chooseQuestionAnswer(text,lang){
   const type=detectQuestionType(text,lang);
   if(!type) return null;
+  if(type==="findinglove"){
+    const lovePack=findingLoveResponses[lang]||findingLoveResponses.de;
+    return chooseLine(lovePack);
+  }
   const pack=questionResponses[lang]||questionResponses.de;
   return chooseLine(pack[type]||pack.general);
 }
